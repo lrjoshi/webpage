@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lok Raj Joshi on Lok Raj Joshi</title>
+    <link>/</link>
+    <description>Recent content in Lok Raj Joshi on Lok Raj Joshi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0500</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Next generation sequencing</title>
+      <link>/project/deep-learning/</link>
+      <pubDate>Sun, 27 May 2018 00:00:00 -0500</pubDate>
+      
+      <guid>/project/deep-learning/</guid>
+      <description>&lt;p&gt;We are using Illumina MiSeq for viral genome sequencing.We have sequenced over 40 isolated of Senecavirus A using Illumina Miseq. Often we run viral metagenomic sequencing in &lt;a href=&#34;https://lokfiles.netlify.com/papilloma.pdf&#34; target=&#34;_blank&#34;&gt;clinical samples for disease diagnosis&lt;/a&gt;. I have deep interest in viral informatics. In the &lt;strong&gt;Posts&lt;/strong&gt; section of this webpage you can find some of the tools I am learning to develop my bioinformatics skills.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Senecavirus A Pathogenesis</title>
+      <link>/project/sva-pathogenesis/</link>
+      <pubDate>Sun, 27 May 2018 00:00:00 -0500</pubDate>
+      
+      <guid>/project/sva-pathogenesis/</guid>
+      <description>&lt;p&gt;Senecavirus A is a re-emergiging disease of swine. It causes vesicular disease in swine. Despite detection of Senecavirus A nucleic acid in pigs with vesicular disease, attemps to establish causal relationship had failed. We were able to reproduce the disease in swine and we have published a detail pathogenesis of Senecavirus A &lt;a href=&#34;http://lokfiles.netlify.com/sva-pathogenesis.pdf&#34; target=&#34;_blank&#34;&gt;in this paper&lt;/a&gt;. We are still working to understand other aspects of this disease in swine.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Vectored-vaccine development</title>
+      <link>/project/orf-vector/</link>
+      <pubDate>Sun, 27 May 2018 00:00:00 -0500</pubDate>
+      
+      <guid>/project/orf-vector/</guid>
+      <description>&lt;p&gt;We have developed Orf virus, which is parapox virus, as a vaccine delivery platfrom. We are using well-characterized immunomudolatory loci present in the genome of Orf virus to insert heterologous genes to develop receombinant viruses that can be used as a vaccine. We have already shown high level of protection against PEDV using &lt;a href=&#34;https://lokfiles.netlify.com/orfv-pedv.pdf&#34; target=&#34;_blank&#34;&gt;recombinant Orf virus expressing Spike gene of PEDV&lt;/a&gt;. This recombinant virus also protects piglets born to our recombinant virus immunized sows &lt;a href=&#34;https://lokfiles.netlify.com/pedv-passive-immunity.pdf&#34; target=&#34;_blank&#34;&gt;(Check paper here)&lt;/a&gt;. Our goal is to develop Orf virus as a vaccine delivery platform for many other infectious disease of swine and other livestock species.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>RNA-Seq Data Analysis in R</title>
+      <link>/post/second-post/</link>
+      <pubDate>Sun, 20 May 2018 00:00:00 -0500</pubDate>
+      
+      <guid>/post/second-post/</guid>
+      <description>&lt;p&gt;RNA-Seq data analysis can be complicated. Softwares with graphical user interface like CLC Workbench have made RNA-Seq data analysis quite easier but often we don&amp;rsquo;t know how the algorithm is working especially if you are from biology background like me. I decided to run a small simulation to understand how this works.It is amazing how a single R package can do things like read aligning and read counts in a few lines of codes.&lt;/p&gt;
+
+&lt;p&gt;Install Rsubread package in R.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;source(&amp;quot;https://bioconductor.org/biocLite.R&amp;quot;)
+biocLite(&amp;quot;Rsubread&amp;quot;)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Load package&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;library (Rsubread)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Actually for this simulation I created a small .fasta file pulling some of the sequences from the &lt;strong&gt;Senecavirus A&lt;/strong&gt; genome. I created a fasta file with few contigs each containing about 70-100 basepairs , and named each contig as read 1, read 2 and so on.And I pulled some sequences from the Zika virus. I will be aligning my reads using Senecavirus genome as a reference. So, Zika virus reads should be ignored by Rsubread while aligning.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt;read1
+AAGGAAGGACTGGGCATGAGGGCCCAGTCCTTCCTTTCCCCTTCCGGGGGGTAAACCGGCTGTGTTTGCT
+&amp;gt;read2
+AGAGGCACAGAGGAGCAACATCCAACCTGCTTTTGTGGGGAACGGTGCGGCTCCAATTCCTGCGTCGCCA
+&amp;gt;read3
+AAGGTGTTAGCGCACCCAAACGGCGCATCTACCAATGCTATTGGTGTGGTCTGCGAGTTCTAGCCTACTC
+&amp;gt;read4
+GTTTCTCCCCTACTCACTCATTCACACACAAAAACTGTGTTGTAACTACAAGATTTGGCCCTCGCACGGG
+&amp;gt;read5
+ATGTGCGATAACCGCAAGATTGACTCAAGCGCGGAAAGCGCTGTAACCACATGCTGTTAGTCCCTTTATG
+&amp;gt;readagain1
+AAGGAAGGACTGGGCATGAGGGCCCAGTCCTTCCTTTCCCCTTCCGGGGGGTAAACCGGCTGTGTTTGCT
+&amp;gt;readagain2
+AGAGGCACAGAGGAGCAACATCCAACCTGCTTTTGTGGGGAACGGTGCGGCTCCAATTCCTGCGTCGCCA
+&amp;gt;readagain3
+GTTTCTCCCCTACTCACTCATTCACACACAAAAACTGTGTTGTAACTACAAGATTTGGCCCTCGCACGGG
+&amp;gt;read12
+CGGGGGGTAAACCGGCTGTGTTTGCTAGAGGCACAGAGGAGCAACATCCAACCTGCTTTTGT
+&amp;gt;read23
+CGGCTCCAATTCCTGCGTCGCCAAAGGTGTTAGCGCACCCAA
+&amp;gt;read34
+GTGTGGTCTGCGAGTTCTAGCCTACTCGTTTCTCCCCTACTCACTCATTCACACACAAAAA
+&amp;gt;read45
+CTACAAGATTTGGCCCTCGCACGGGATGTGCGATAACCGCAAGATTGACTCAAGCGCGGAAAGCGCTGTAACC
+&amp;gt;readsvalast
+TGCCGTACCGAGTCACGAGTACCTGCAGGCAAGATGGAGGGCCTTGTTCGACTGACCTGGATAGCCCAACGCGCTTCGGTGCTGCCGGCGATTCTGGGAGAACTCAGTCGGA
+&amp;gt;readagain1
+AAGGAAGGACTGGGCATGAGGGCCCAGTCCTTCCTTTCCCCTTCCGGGGGGTAAACCGGCTGTGTTTGCT
+&amp;gt;zika1
+AGTTGTTGATCTGTGTGAATCAGACTGCGACAGTTCGAGTTTGAAGCGAAAGCTAGCAACAGTATCAACA
+&amp;gt;zika12
+AAAGCTAGCAACAGTATCAACAGGTTTTATTTTGGATTTGGAAACGAGAGTTTCTGGTCATGAAAAACCCA
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This fasta file needs to be changed into &lt;strong&gt;fastq&lt;/strong&gt; format. There are many tools available to convert fasta file to fastq format. I use &lt;strong&gt;reformat.sh&lt;/strong&gt; script which is a part of bbmap. You can find details about bbmap and reformat.sh script elsewhere. The general syntax is as follow:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./reformat.sh in= meta.fasta out=meta.fastq qfake=35
+#meta.fasta is my input file, meta.fastq is the output file and we are assigning quality score of 34 to all the basepairs.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, lets go back to R. We have loaded our package already. First, we need to build index of our reference files. Use the same Senecavirus A whole genome file which you used to extract reads in the above example. The file can be in fasta format. Then run follwing command.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#syntax
+buildindex(basename=&amp;quot;reference_index&amp;quot;,reference=ref)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In my case it would be&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;buildindex(basename= “seneca”, reference= “sva.fasta”)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, I can align your reads with the index which I  created above.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;align(index=&amp;quot;seneca&amp;quot;,readfile1=”meta.fastq”,output_file=&amp;quot;alignResults.BAM&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I saw that all the reads that were in meta.fastq belonging to Senecavirus A were aligned while , all the Zika virus reads were ignored.The output will be in .BAM format.&lt;/p&gt;
+
+&lt;p&gt;Now the tricky part. We need a annotated file in GTF or GFF format to count the features or genes aligned. For viruses usually you don&amp;rsquo;t file well-annotated files. Rsubread package allows you to create a such file in tabular format which they call it SAF format.&lt;/p&gt;
+
+&lt;p&gt;So, lets use follwing code to create one SAF file for this analysis.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ann &amp;lt;- data.frame(
+GeneID=c(&amp;quot;gene1&amp;quot;,&amp;quot;gene1&amp;quot;,&amp;quot;gene2&amp;quot;,&amp;quot;gene2&amp;quot;),
+Chr=&amp;quot;KX778101.1&amp;quot;,
+Start=c(100,1000,3000,5000),
+End=c(500,1800,4000,5500),
+Strand=c(&amp;quot;+&amp;quot;,&amp;quot;+&amp;quot;,&amp;quot;-&amp;quot;,&amp;quot;-&amp;quot;),
+stringsAsFactors=FALSE)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt; ann
+  GeneID        Chr Start  End Strand
+1  gene1 KX778101.1   100  500      +
+2  gene1 KX778101.1  1000 1800      +
+3  gene2 KX778101.1  3000 4000      -
+4  gene2 KX778101.1  5000 5500      -
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here you have to use Genebank accession number of virus genome as Chr. Beacuse .BAM file that we created by aligning whill have accession number liked to each reads. Other parameters can be changed.&lt;/p&gt;
+
+&lt;p&gt;Now, final step is to count reads.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;fc_SE &amp;lt;- featureCounts(&amp;quot;alignResults.BAM&amp;quot;,annot.ext=ann)
+fc_SE
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can see how many features were counted on the basis of information you provided in SAF table.&lt;/p&gt;
+
+&lt;p&gt;Hope this will help you to understand how Rsubread package works. I had to struggle to create SAF file, but I got help from Biostar.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Passive immunity to porcine epidemic diarrhea virus following immunization of pregnant gilts with a recombinant orf virus vector expressing the spike protein</title>
+      <link>/publication/pedv-passive-immunity/</link>
+      <pubDate>Thu, 03 May 2018 00:00:00 -0500</pubDate>
+      
+      <guid>/publication/pedv-passive-immunity/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Passive immunity is critical for protection of neonatal piglets against porcine epidemic diarrhea virus (PEDV). Here, we investigated the immunogenicity of an orf virus (ORFV) vector expressing the full-length spike (S) protein of PEDV (ORFV-PEDV-S) in pregnant gilts and its ability to confer passive immunity and protection in piglets. Three doses of ORFV-PEDV-S were given to two groups of PEDV-negative pregnant gilts, with the last dose being administered two weeks prior to farrowing. One of the two groups immunized with the ORFV-PEDV-S recombinant virus was also exposed to live PEDV orally on day 31 post-immunization (pi). Antibody responses were assessed in serum, colostrum and milk of immunized gilts, and passive transfer of antibodies was evaluated in piglet sera. The protective efficacy of ORFV-PEDV-S was evaluated after challenge of the piglets with PEDV. PEDV-specific IgG, IgA and neutralizing antibody (NA) responses were detected in ORFV-PEDV-S-immunized and ORFV-PEDV-S-immunized/PEDV-exposed gilts. PEDV NA, IgG and IgA were detected in the serum of piglets born to immunized gilts, demonstrating the transfer of antibodies through colostrum and milk. Piglets born to immunized gilts showed reduced morbidity and a marked reduction in mortality after PEDV challenge in comparison to control piglets. Piglets born to gilts that received ORFV-PEDV-S and were exposed to live PEDV showed stronger NA responses and lower clinical scores when compared to piglets born to gilts immunized with ORFV-PEDV-S alone. These results demonstrate the potential of ORFV as a vaccine delivery platform capable of eliciting passive immunity against PEDV.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Adaptive immune responses following Senecavirus A infection in pigs</title>
+      <link>/publication/sva-adaptive/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 -0600</pubDate>
+      
+      <guid>/publication/sva-adaptive/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Senecavirus A (SVA), an emerging picornavirus of swine, causes vesicular disease (VD) that is clinically indistinguishable from foot-and-mouth disease (FMD) in pigs. Many aspects of SVA interactions with the host and the host immune responses to infection, however, remain unknown. In the present study, humoral and cellular immune responses to SVA were evaluated following infection in pigs. We show that SVA infection elicited an early and robust virus-neutralizing (VN) antibody response, which coincided and was strongly correlated with VP2- and VP3-specific IgM responses. Notably, the neutralizing antibody (NA) responses paralleled the reduction of viremia and resolution of the disease. Analysis of the major porcine T-cell subsets revealed that during the acute/clinical phase of SVA infection (14 days postinfection [p.i.]), T-cell responses were characterized by an increased frequency of αβ T cells, especially CD4+ T cells, which were first detected by day 7 p.i. and increased in frequency until day 14 p.i. Additionally, the frequency of CD8+ and double-positive CD4+ CD8+ T cells (effector/memory T cells) expressing interferon gamma (IFN-γ) or proliferating in response to SVA antigen stimulation increased after day 10 p.i. Results presented here show that SVA elicits B- and T-cell activation early upon infection, with IgM antibody levels being correlated with early neutralizing activity against the virus and peak B- and T-cell responses paralleling clinical resolution of the disease. The work provides important insights into the immunological events that follow SVA infection in the natural host.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Immunogenicity of ORFV-based vectors expressing the rabies virus glycoprotein in livestock species</title>
+      <link>/publication/orfv-rabies/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 -0500</pubDate>
+      
+      <guid>/publication/orfv-rabies/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The parapoxvirus Orf virus (ORFV) encodes several immunomodulatory proteins (IMPs) that modulate host-innate and pro-inflammatory responses and has been proposed as a vaccine delivery vector for use in animal species. Here we describe the construction and characterization of two recombinant ORFV vectors expressing the rabies virus (RABV) glycoprotein (G). The RABV-G gene was inserted in the ORFV024 or ORFV121 gene loci, which encode for IMPs that are unique to parapoxviruses and inhibit activation of the NF-κB signaling pathway. The immunogenicity of the resultant recombinant viruses (ORFV∆024RABV-G or ORFV∆121RABV-G, respectively) was evaluated in pigs and cattle. Immunization of the target species with ORFV∆024RABV-G and ORFV∆121RABV-G elicited robust neutralizing antibody responses against RABV. Notably, neutralizing antibody titers induced in ORFV∆121RABV-G-immunized pigs and cattle were significantly higher than those detected in ORFV∆024RABV-G-immunized animals, indicating a higher immunogenicity of ORFVΔ121-based vectors in these animal species.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A novel bovine papillomavirus type in the genus Dyokappapapillomavirus</title>
+      <link>/publication/papilloma/</link>
+      <pubDate>Mon, 16 Oct 2017 00:00:00 -0500</pubDate>
+      
+      <guid>/publication/papilloma/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Papillomaviruses are a diverse group of viruses that are known to infect a wide range of animal species. Bovine papillomaviruses (BPVs) are divided into at least 21 genotypes (BPV1 to BPV21),  with most BPV isolates/strains described to date belonging to one of four genera, including Deltapapillomavirus, Xipapillomavirus, Epsilonpapillomavirus and Dyoxipapillomavirus. Here, we describe the identification and genetic characterization of a new BPV type in the genus Dyokappapapillomavirus. A farm in the state of New York, USA, reported chronic cases of vulvovaginitis in Holstein cows in 2016. Biopsies and/or swab samples collected from the vaginal mucosa were subjected to diagnostic investigation. Conventional diagnostic assays yielded negative results, and vaginal swab samples were subjected to viral metagenomic sequencing. Notably, BLAST searches revealed a papillomavirus genome with 7480 bp in length (67% nt sequence identity to BPV16). Additionally, phylogenetic analysis of the L1 gene of the papillomavirus identified here (tentatively named BPV22) revealed that it clusters with members of the genus Dyokappapapillomavirus. Interestingly, the recently identified BPV16, which was detected in fibropapilloma lesions in cattle also clusters within the Dyokappapapillomavirus group. Each virus, however, forms a separate branch in the phylogenetic tree. These results indicate that the putative BPV22 represents the second BPV within the genus Dyokappapapillomavirus.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The S2 glycoprotein subunit of porcine epidemic diarrhea virus contains immunodominant neutralizing epitopes</title>
+      <link>/publication/pedv-s2/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 -0500</pubDate>
+      
+      <guid>/publication/pedv-s2/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The porcine epidemic diarrhea virus (PEDV) spike (S) protein is the major target of neutralizing antibodies against PEDV. Here immunodominant neutralizing epitopes of PEDV were identified using a panel of S-specific monoclonal antibodies (mAbs). Ten of eleven S-specific mAbs successfully neutralized PEDV infectivity in vitro. Notably, epitope mapping by peptide ELISAs revealed that nine of these mAbs recognized linear neutralizing epitopes located in the N-terminus of the S2 glycoprotein subunit (amino acids [aa] 744–759, 747–774 and/or 756–771). Additionally, one mAb recognized a neutralizing epitope located in the C-terminus of S2 (aa 1371–1377), while only one neutralizing mAb reacted against a region of the S1 glycoprotein subunit (aa 499–600). Notably, mAbs that recognized epitopes within the S2 subunit presented the highest neutralizing activity against PEDV. Together these results indicate that the S2 glycoprotein subunit contains major antigenic determinants and, perhaps, the immunodominant neutralizing epitopes of PEDV.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Genetic characterization and phylogenetic analysis of senecavirus A circulating in the US and in Brazil.</title>
+      <link>/publication/sva-brazil/</link>
+      <pubDate>Sun, 25 Dec 2016 00:00:00 -0600</pubDate>
+      
+      <guid>/publication/sva-brazil/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neonatal pig mortality associated with senecavirus A.</title>
+      <link>/publication/sva-embraba/</link>
+      <pubDate>Sun, 25 Dec 2016 00:00:00 -0600</pubDate>
+      
+      <guid>/publication/sva-embraba/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Senecavirus A (SVA) is an emerging picornavirus that
+has been associated with outbreaks of vesicular disease
+in swine. In 2015, neonatal mortality affecting piglets
+of 07 days of age correlated with SVA, was reported
+in Brazil. Here, we present an investigation carried
+on during 20152016 in five farrowtofinish swine operations
+in Southern Brazil showing an increased
+neonatal mortality and also vesicular disease that
+have been associated to SVA infection. Piglets were
+lethargic and had a watery diarrhea. The mortality
+rate increased in 23% and in some littermates a 100%
+of mortality was observed. Despite of a relatively fast
+onset of wasting syndrome progressing to mortality, all
+herds recovered to baseline mortality levels within 410
+days. Piglets were necropsied and tissue samples were
+collected for histopathology, RTPCR for SVA detection
+targeting the VP1 VP3 region, and for viral isolation in
+H1299 cell culture. Genome sequences of VP1 gene of
+five SVA isolates were compared to other SVA sequences
+available on GenBank. Necropsy of six piglets revealed
+empty stomach and mesocolonic edema. In general,
+it was observed enlargement and edema of inguinal
+lymph nodes, pulmonary edema, ascites and ulcerative
+lesions on the snout and coronary band. Microscopic
+lesions were characterized by necrotic epidermitis and
+dermatitis of coronary band, mild enteritis with villus
+degeneration on small intestine, marked mesocolon
+edema and multifocal hemorrhage with lung edema.
+Senecavirus A was detected by RTPCR in tonsil, lung,
+liver, intestine and coronary band. SVA was isolated in
+cell culture from tonsil, lung, intestine and coronary band
+from piglets of all farms. Sequence comparisons based
+on a region of the VP1 gene (541 base pairs) revealed
+that the Brazilian isolates characterized here share 96-
+99% of nucleotide (nt) identity with contemporary
+Brazilian isolates, 9598% nt identity with US and 9093%
+nt identity with the prototype strain SVV001. SVA
+was associated with neonatal mortality based on RTPCR,
+virus isolation and sequencing results. The genetic
+analysis shows the diversity of the Brazilian SVA isolates
+and that more studies are needed to demonstrate if there
+are differences between SVA from neonatal mortality
+and vesicular cases. SVA is clinically and economically
+important due to its resemblance with vesicular diseases,
+so the diagnosis tools are critical to confirm the initial
+investigation.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pathogenesis of Senecavirus A in finishing pigs</title>
+      <link>/publication/sva-pathogenesis/</link>
+      <pubDate>Fri, 16 Dec 2016 00:00:00 -0600</pubDate>
+      
+      <guid>/publication/sva-pathogenesis/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Senecavirus A (SVA) is an emerging picornavirus that has been associated with vesicular disease and neonatal mortality in swine. Many aspects of SVA infection biology and pathogenesis, however, remain unknown. Here the pathogenesis of SVA was investigated in finishing pigs. Animals were inoculated via the oronasal route with SVA strain SD15-26 and monitored for clinical signs and lesions associated with SVA infection. Viraemia was assessed in serum and virus shedding monitored in oral and nasal secretions and faeces by real-time reverse transcriptase quantitative PCR (RT-qPCR) and/or virus isolation. Additionally, viral load and tissue distribution were assessed during acute infection and following convalescence from disease. Clinical signs characterized by lethargy and lameness were first observed on day 4 post-inoculation (pi) and persisted for approximately 2–10 days. Vesicular lesions were first observed on day 4 pi on the snout and/or feet, affecting the coronary bands, dewclaws, interdigital space and heel/sole of SVA-infected animals. A short-term viraemia was observed between days 3 and 10 pi, whereas virus shedding was detected between days 1 and 28 pi in oral and nasal secretions and faeces. Notably, RT-qPCR and in situ hybridization (ISH) performed on tissues collected on day 38 pi revealed the presence of SVA RNA in the tonsils of all SVA-infected animals. Serological responses to SVA were characterized by early neutralizing antibody responses (day 5 pi), which coincided with decreased levels of viraemia, virus shedding and viral load in tissues. This study provides significant insights into the pathogenesis and infectious dynamics of SVA in swine.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Immunogenicity of a Recombinant Parapoxvirus Expressing the Spike Protein of Porcine Epidemic Diarrhea Virus.</title>
+      <link>/publication/orfv-pedv/</link>
+      <pubDate>Mon, 01 Aug 2016 00:00:00 -0500</pubDate>
+      
+      <guid>/publication/orfv-pedv/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The parapoxvirus Orf virus (ORFV), has long been recognized for its immunomodulatory properties in permissive and non-permissive animal species. Here, a new recombinant ORFV expressing the full-length spike (S) protein of Porcine epidemic diarrhea virus (PEDV) was generated and its immunogenicity and protective efficacy were evaluated in pigs. The PEDV S was inserted into the ORFV121 gene locus, an immunomodulatory gene that inhibits activation of the NF-κB signalling pathway and contributes to ORFV virulence in the natural host. The recombinant ORFV-PEDV-S virus efficiently and stably expressed the PEDV S protein in cell culture in vitro. Three intramuscular (IM) immunizations with the recombinant ORFV-PEDV-S in 3-week-old pigs elicited robust serum IgG, IgA and neutralizing antibody responses against PEDV. Additionally, IM immunization with the recombinant ORFV-PEDV-S virus protected pigs from clinical signs of porcine epidemic diarrhoea (PED) and reduced virus shedding in faeces upon challenge infection. These results demonstrate the suitability of ORFV121 gene locus as an insertion site for heterologous gene expression and delivery by ORFV-based viral vectors. Additionally, the results provide evidence of the potential of ORFV as a vaccine delivery vector for enteric viral diseases of swine. This study may have important implications for future development of ORFV-vectored vaccines for swine.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Detection of the emerging picornavirus Senecavirus A in pigs, mice, and houseflies</title>
+      <link>/publication/sva-genomic/</link>
+      <pubDate>Wed, 01 Jun 2016 00:00:00 -0500</pubDate>
+      
+      <guid>/publication/sva-genomic/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Senecavirus A (SVA) is an emerging picornavirus that has been recently associated with an increased number of outbreaks of vesicular disease and neonatal mortality in swine. Many aspects of SVA infection biology and epidemiology remain unknown. Here, we present a diagnostic investigation conducted in swine herds affected by vesicular disease and increased neonatal mortality. Clinical and environmental samples were collected from affected and unaffected herds and were screened for the presence of SVA by real-time reverse transcriptase PCR and virus isolation. Notably, SVA was detected and isolated from vesicular lesions and tissues of affected pigs, environmental samples, mouse feces, and mouse small intestine. SVA nucleic acid was also detected in houseflies collected from affected farms and from a farm with no history of vesicular disease. Detection of SVA in mice and housefly samples and recovery of viable virus from mouse feces and small intestine suggest that these pests may play a role on the epidemiology of SVA. These results provide important information that may allow the development of improved prevention and control strategies for SVA.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Viral Diagnostic Assay Developement</title>
+      <link>/project/example-external-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 -0500</pubDate>
+      
+      <guid>/project/example-external-project/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

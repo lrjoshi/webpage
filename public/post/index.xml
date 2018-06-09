@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Lok Raj Joshi</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on Lok Raj Joshi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 20 May 2018 00:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RNA-Seq Data Analysis in R</title>
+      <link>/post/second-post/</link>
+      <pubDate>Sun, 20 May 2018 00:00:00 -0500</pubDate>
+      
+      <guid>/post/second-post/</guid>
+      <description>RNA-Seq data analysis can be complicated. Softwares with graphical user interface like CLC Workbench have made RNA-Seq data analysis quite easier but often we don&amp;rsquo;t know how the algorithm is working especially if you are from biology background like me. I decided to run a small simulation to understand how this works.It is amazing how a single R package can do things like read aligning and read counts in a few lines of codes.</description>
+    </item>
+    
+    <item>
+      <title>Working with NCBI SRA files</title>
+      <link>/post/getting-started/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
+      
+      <guid>/post/getting-started/</guid>
+      <description>Although seems straightforward, working with SRA files can be tricky for newbies. Here I have short description about how to download and work with SRA files.
+NGS read files can be downloaded using sra-toolkit. First you have to download latest version of sra-toolkit from their website. The file should be in tar.gz format.
+Then untar the file based on the OS you are using.
+Then use the following command to put command line in path</description>
+    </item>
+    
+  </channel>
+</rss>
