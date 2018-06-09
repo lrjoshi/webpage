@@ -1,0 +1,10 @@
+Issue-
+Folders public and static were not being selected for deploying.
+
+Solve -
+There is a index.lock file in .git folder. This folder is hidden so you have to enable show hidden folder setting.
+
+Then go to the Terminal in R studio and use following command
+git add -A
+
+Then all the files and folders will be selected and you can commit and push to the github repository.
