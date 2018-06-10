@@ -11,6 +11,135 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Creating 96-Well Plates in R</title>
+      <link>/post/2015-07-23-r-rmarkdown/</link>
+      <pubDate>Mon, 23 Jul 2018 21:13:14 -0500</pubDate>
+      
+      <guid>/post/2015-07-23-r-rmarkdown/</guid>
+      <description>&lt;p&gt;This week I did some virus neutralization test. I wanted to show the results exactly I saw in 96-well plate. I was looking if there is any package in R that can actually do this. Actually there is one (or might be more). I found a package called &lt;strong&gt;platetools&lt;/strong&gt; that can plot values in plates.&lt;/p&gt;
+&lt;p&gt;I wan’t to show how I did it.&lt;/p&gt;
+&lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;R Markdown&lt;/h1&gt;
+&lt;p&gt;First load all the required packages&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggplot2)
+library(platetools)
+library(viridis)
+## Loading required package: viridisLite&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Prepare your datasets.I prepared in R as shown below.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data=read.csv(&amp;quot;df.csv&amp;quot;)
+data
+##     X vals well
+## 1   1    1  A01
+## 2   2    0  A02
+## 3   3    0  A03
+## 4   4    1  A04
+## 5   5    0  A05
+## 6   6    0  A06
+## 7   7    0  A07
+## 8   8    0  A08
+## 9   9    0  A09
+## 10 10    0  A10
+## 11 11    0  A11
+## 12 12    1  A12
+## 13 13    1  B01
+## 14 14    0  B02
+## 15 15    0  B03
+## 16 16    1  B04
+## 17 17    0  B05
+## 18 18    0  B06
+## 19 19    0  B07
+## 20 20    0  B08
+## 21 21    0  B09
+## 22 22    0  B10
+## 23 23    0  B11
+## 24 24    1  B12
+## 25 25    1  C01
+## 26 26    0  C02
+## 27 27    0  C03
+## 28 28    1  C04
+## 29 29    0  C05
+## 30 30    0  C06
+## 31 31    0  C07
+## 32 32    0  C08
+## 33 33    0  C09
+## 34 34    0  C10
+## 35 35    1  C11
+## 36 36    0  C12
+## 37 37    1  D01
+## 38 38    0  D02
+## 39 39    0  D03
+## 40 40    0  D04
+## 41 41    0  D05
+## 42 42    0  D06
+## 43 43    0  D07
+## 44 44    0  D08
+## 45 45    0  D09
+## 46 46    0  D10
+## 47 47    1  D11
+## 48 48    0  D12
+## 49 49    0  E01
+## 50 50    0  E02
+## 51 51    0  E03
+## 52 52    0  E04
+## 53 53    0  E05
+## 54 54    0  E06
+## 55 55    0  E07
+## 56 56    0  E08
+## 57 57    0  E09
+## 58 58    0  E10
+## 59 59    1  E11
+## 60 60    0  E12
+## 61 61    0  F01
+## 62 62    0  F02
+## 63 63    0  F03
+## 64 64    0  F04
+## 65 65    0  F05
+## 66 66    0  F06
+## 67 67    0  F07
+## 68 68    0  F08
+## 69 69    0  F09
+## 70 70    0  F10
+## 71 71    1  F11
+## 72 72    0  F12
+## 73 73    0  G01
+## 74 74    0  G02
+## 75 75    0  G03
+## 76 76    0  G04
+## 77 77    0  G05
+## 78 78    0  G06
+## 79 79    0  G07
+## 80 80    0  G08
+## 81 81    0  G09
+## 82 82    0  G10
+## 83 83    1  G11
+## 84 84    0  G12
+## 85 85    0  H01
+## 86 86    0  H02
+## 87 87    0  H03
+## 88 88    0  H04
+## 89 89    0  H05
+## 90 90    0  H06
+## 91 91    0  H07
+## 92 92    0  H08
+## 93 93    0  H09
+## 94 94    0  H10
+## 95 95    1  H11
+## 96 96    0  H12&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally plot your data&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plate_id &amp;lt;- rep(c(&amp;quot;My Plate&amp;quot;), each = 96)
+
+z_grid(data = data$vals,
+       well = data$well,
+       plate_id = plate_id) +
+  ggtitle(&amp;quot;Virus Neutralization Test&amp;quot;)
+## Warning: package &amp;#39;bindrcpp&amp;#39; was built under R version 3.4.4&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Here, the label is not useful because I am interested only in positive and negative. But can be useful in plotting ELISA plates.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Next generation sequencing</title>
       <link>/project/deep-learning/</link>
       <pubDate>Sun, 27 May 2018 00:00:00 -0500</pubDate>
@@ -315,15 +444,6 @@ investigation.&lt;/p&gt;
 
 &lt;p&gt;Senecavirus A (SVA) is an emerging picornavirus that has been recently associated with an increased number of outbreaks of vesicular disease and neonatal mortality in swine. Many aspects of SVA infection biology and epidemiology remain unknown. Here, we present a diagnostic investigation conducted in swine herds affected by vesicular disease and increased neonatal mortality. Clinical and environmental samples were collected from affected and unaffected herds and were screened for the presence of SVA by real-time reverse transcriptase PCR and virus isolation. Notably, SVA was detected and isolated from vesicular lesions and tissues of affected pigs, environmental samples, mouse feces, and mouse small intestine. SVA nucleic acid was also detected in houseflies collected from affected farms and from a farm with no history of vesicular disease. Detection of SVA in mice and housefly samples and recovery of viable virus from mouse feces and small intestine suggest that these pests may play a role on the epidemiology of SVA. These results provide important information that may allow the development of improved prevention and control strategies for SVA.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Viral Diagnostic Assay Developement</title>
-      <link>/project/example-external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 -0500</pubDate>
-      
-      <guid>/project/example-external-project/</guid>
-      <description></description>
     </item>
     
   </channel>

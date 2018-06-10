@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>/post/2015-07-23-r-rmarkdown/</loc>
+      <lastmod>2018-07-23T21:13:14-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/project/deep-learning/</loc>
       <lastmod>2018-05-27T00:00:00-05:00</lastmod>
     </url>
@@ -283,7 +292,7 @@
     <url>
     
       <loc>/post/</loc>
-      <lastmod>2018-01-13T00:00:00-06:00</lastmod>
+      <lastmod>2018-07-23T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -323,7 +332,17 @@
     <url>
     
       <loc>/tags/r/</loc>
-      <lastmod>2018-01-13T00:00:00-06:00</lastmod>
+      <lastmod>2018-07-23T21:13:14-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/categories/r/</loc>
+      <lastmod>2018-07-23T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
     
