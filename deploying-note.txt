@@ -8,3 +8,7 @@ Then go to the Terminal in R studio and use following command
 git add -A
 
 Then all the files and folders will be selected and you can commit and push to the github repository.
+
+This git add -A is the lifesaver. Can be used to refresh or restart.
+
+Use serve_site() before pushing to github especially if you have Rmarkdown files. Otherwise the might not appear in website.
