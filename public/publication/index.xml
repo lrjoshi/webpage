@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Thu, 03 May 2018 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 18 Jul 2018 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pathogenicity and cross-reactive immune responses of a historical and a contemporary Senecavirus A strains in pigs</title>
+      <link>/publication/sva-cross-reactive/</link>
+      <pubDate>Wed, 18 Jul 2018 00:00:00 -0500</pubDate>
+      
+      <guid>/publication/sva-cross-reactive/</guid>
+      <description>Abstract
+The goals of this study were to compare the pathogenicity and infection dynamics of a historical and a contemporary SVA strains (SVV 001 and SD15-26) and to assess cross-neutralizing and cross-reactive T cell responses following experimental infection in pigs. Both SVA strains successfully infected all inoculated animals, resulting in viremia and robust antibody and cellular immune responses. SVA SD15-26 infection resulted in characteristic clinical signs and vesicular lesions, however, SVA SVV 001 did not cause overt clinical disease with inoculated animals remaining clinically normal during the experiment.</description>
+    </item>
     
     <item>
       <title>Passive immunity to porcine epidemic diarrhea virus following immunization of pregnant gilts with a recombinant orf virus vector expressing the spike protein</title>

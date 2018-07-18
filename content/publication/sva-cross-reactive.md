@@ -1,10 +1,9 @@
 +++
-title = "Pathogenicity and cross-reactive immune responses of a historical and a
-contemporary Senecavirus A strains in pigs"
+title = "Pathogenicity and cross-reactive immune responses of a historical and a contemporary Senecavirus A strains in pigs"
 date = 2018-07-18T00:00:00
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Maureen HV Fernandes","Mayara F Maggioli", "**Lok R Joshi**","Travis Clement", "Tatiane C. Faccin","Rolf Rauha","Fernando V. Bauermanna","Diego G Diel"]
+authors = ["Maureen HV Fernandes","Mayara F Maggioli", "**Lok R Joshi**","Travis Clement", "Tatiane C. Faccin","Rolf Rauha","Fernando V. Bauermann","Diego G Diel"]
 
 # Publication type.
 # Legend:

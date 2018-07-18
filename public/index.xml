@@ -140,6 +140,18 @@ z_grid(data = data$vals,
     </item>
     
     <item>
+      <title>Pathogenicity and cross-reactive immune responses of a historical and a contemporary Senecavirus A strains in pigs</title>
+      <link>/publication/sva-cross-reactive/</link>
+      <pubDate>Wed, 18 Jul 2018 00:00:00 -0500</pubDate>
+      
+      <guid>/publication/sva-cross-reactive/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The goals of this study were to compare the pathogenicity and infection dynamics of a historical and a contemporary SVA strains (SVV 001 and SD15-26) and to assess cross-neutralizing and cross-reactive T cell responses following experimental infection in pigs. Both SVA strains successfully infected all inoculated animals, resulting in viremia and robust antibody and cellular immune responses. SVA SD15-26 infection resulted in characteristic clinical signs and vesicular lesions, however, SVA SVV 001 did not cause overt clinical disease with inoculated animals remaining clinically normal during the experiment. Notably, neutralization- and -recall IFN-γ expression-assays revealed marked cross-neutralizing antibody and cross-reactive T cell responses between the two viral strains. Together these results demonstrate that the historical SVA SVV 001 strain presents low virulence in pigs when compared to the contemporary SVA SD15-26 strain. Additionally, immunological assays indicate that SVA SVV 001 and SD15-26 are antigenically related and share conserved antigenic determinants.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Next generation sequencing</title>
       <link>/project/deep-learning/</link>
       <pubDate>Sun, 27 May 2018 00:00:00 -0500</pubDate>
@@ -431,18 +443,6 @@ investigation.&lt;/p&gt;
       <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;The parapoxvirus Orf virus (ORFV), has long been recognized for its immunomodulatory properties in permissive and non-permissive animal species. Here, a new recombinant ORFV expressing the full-length spike (S) protein of Porcine epidemic diarrhea virus (PEDV) was generated and its immunogenicity and protective efficacy were evaluated in pigs. The PEDV S was inserted into the ORFV121 gene locus, an immunomodulatory gene that inhibits activation of the NF-κB signalling pathway and contributes to ORFV virulence in the natural host. The recombinant ORFV-PEDV-S virus efficiently and stably expressed the PEDV S protein in cell culture in vitro. Three intramuscular (IM) immunizations with the recombinant ORFV-PEDV-S in 3-week-old pigs elicited robust serum IgG, IgA and neutralizing antibody responses against PEDV. Additionally, IM immunization with the recombinant ORFV-PEDV-S virus protected pigs from clinical signs of porcine epidemic diarrhoea (PED) and reduced virus shedding in faeces upon challenge infection. These results demonstrate the suitability of ORFV121 gene locus as an insertion site for heterologous gene expression and delivery by ORFV-based viral vectors. Additionally, the results provide evidence of the potential of ORFV as a vaccine delivery vector for enteric viral diseases of swine. This study may have important implications for future development of ORFV-vectored vaccines for swine.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Detection of the emerging picornavirus Senecavirus A in pigs, mice, and houseflies</title>
-      <link>/publication/sva-genomic/</link>
-      <pubDate>Wed, 01 Jun 2016 00:00:00 -0500</pubDate>
-      
-      <guid>/publication/sva-genomic/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Senecavirus A (SVA) is an emerging picornavirus that has been recently associated with an increased number of outbreaks of vesicular disease and neonatal mortality in swine. Many aspects of SVA infection biology and epidemiology remain unknown. Here, we present a diagnostic investigation conducted in swine herds affected by vesicular disease and increased neonatal mortality. Clinical and environmental samples were collected from affected and unaffected herds and were screened for the presence of SVA by real-time reverse transcriptase PCR and virus isolation. Notably, SVA was detected and isolated from vesicular lesions and tissues of affected pigs, environmental samples, mouse feces, and mouse small intestine. SVA nucleic acid was also detected in houseflies collected from affected farms and from a farm with no history of vesicular disease. Detection of SVA in mice and housefly samples and recovery of viable virus from mouse feces and small intestine suggest that these pests may play a role on the epidemiology of SVA. These results provide important information that may allow the development of improved prevention and control strategies for SVA.&lt;/p&gt;
 </description>
     </item>
     
