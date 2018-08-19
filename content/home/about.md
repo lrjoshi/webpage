@@ -36,7 +36,7 @@ weight = 5
 +++
 
 # Biography
-
+***
 I am Lok Raj Joshi, PhD student at [Dr. Diel's Lab](https://www.sdstate.edu/directory/diego-diel), Department of Veterinary and Biomedical Sciecne, SDSU. I am working on viral pathogensis,viral diagnostic assay and vectored-vaccine developement.
-
 I have deep  interest in next-generation sequencing and genomic data analysis. I use R and Linux command line tools for genomic data analysis.  
+***

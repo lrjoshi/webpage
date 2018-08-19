@@ -39,6 +39,6 @@ ggplotly(p)
 
 >First Award on National Level Story Writing Competition (2009),Radio Audio and USAID, Nepal
 
->SDSU Merit Scholarship (2008-2013), Tribhuvan University Nepal
+>Merit Scholarship (2008-2013), Tribhuvan University Nepal
 
 >First Award on Essay Competition (2006), NIST College, Nepal
