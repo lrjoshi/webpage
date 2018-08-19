@@ -29,7 +29,7 @@ ggplotly(p)
 
 >SDSU Sigma XI Best PhD Paper Award (2018)
 
->BioImaging COntest-SDSU, Third Position (2018)
+>Bioimaging Contest-SDSU, Third Position (2018)
 
 >Best Oral Presentation Award, CRWAD Meeting (2016)
 
