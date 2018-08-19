@@ -275,12 +275,12 @@ enableGitInfo = false
 [[menu.main]]
   name = "Impact/Awards"
   url = "#Impact"
-  weight = 6
+  weight = 5
 
 [[menu.main]]
   name = "Contact"
   url = "#contact"
-  weight = 5
+  weight = 6
 
 # Taxonomies.
 [taxonomies]
