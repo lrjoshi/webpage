@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Metrics on Lok Raj Joshi</title>
+    <link>/metrics/</link>
+    <description>Recent content in Metrics on Lok Raj Joshi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    
+	<atom:link href="/metrics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/metrics/ggg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/metrics/ggg/</guid>
+      <description>+++ title = “RNA-Seq Data Analysis in R”
+date = 2018-05-20T00:00:00 lastmod = 2018-01-13T00:00:00 draft = false
+tags = [“RNA-Seq”,“R”,“Senecavirus A”] summary = “Rsubread package for RNA-Seq Data Analysis”
+[header] image = “” caption = “”
+[[gallery_item]] album = “1” image = “” caption = “”
++++
+title: “Research Metrics” author: “Lok Raj Joshi” output: flexdashboard::flex_dashboard: orientation: columns social: menu source_code: embed —
+ColumnGoogle ScholarYear= c(2015,2016,2017,2018)Citations= c(4,6,32,27)data=data.</description>
+    </item>
+    
+  </channel>
+</rss>

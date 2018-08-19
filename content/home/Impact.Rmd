@@ -1,0 +1,44 @@
+---
+title: "Impact/Awards"
+author: "Lok Raj Joshi"
+date: 2018-07-23T21:13:14-05:00
+categories: ["R"]
+tags: ["Citations", "Research", "Awards"]
+---
+
+***
+```{r eval=T, echo=F, warning=FALSE,error=FALSE,message=FALSE}
+
+library (ggplot2)
+library(plotly)
+Year= c(2015,2016,2017,2018)
+Citations =c(4,6,32,30)
+
+data= data.frame(Year, Citations)
+
+p=ggplot(data,aes(x=Year,y=Citations))+
+  geom_bar(stat = 'identity',color="black",fill="red",alpha=0.5)
+p=p+ggtitle("Citations per year") + 
+     theme(plot.title = element_text(lineheight=.5, face="bold"))          
+ggplotly(p)
+```
+
+
+#Awards
+***
+
+>SDSU Sigma XI Best PhD Paper Award (2018)
+
+>BioImaging COntest-SDSU, Third Position (2018)
+
+>Best Oral Presentation Award, CRWAD Meeting (2016)
+
+>SDSU Sigma XI Grad Student Paper Award, Second Position (2016)
+
+>SDSU Sigma XI Grad Student Proposal Award,Second Position (2015)
+
+>First Award on National Level Story Writing Competition (2009),Radio Audio and USAID, Nepal
+
+>SDSU Merit Scholarship (2008-2013), Tribhuvan University Nepal
+
+>First Award on Essay Competition (2006), NIST College, Nepal

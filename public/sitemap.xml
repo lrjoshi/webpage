@@ -241,7 +241,27 @@
     
     <url>
     
+      <loc>/tags/awards/</loc>
+      <lastmod>2018-07-23T21:13:14-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/citations/</loc>
+      <lastmod>2018-07-23T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -362,6 +382,16 @@
     
       <loc>/tags/rna-seq/</loc>
       <lastmod>2018-01-13T00:00:00-06:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/research/</loc>
+      <lastmod>2018-07-23T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
     
