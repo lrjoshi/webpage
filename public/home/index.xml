@@ -71,20 +71,20 @@
     </item>
     
     <item>
-      <title>Tags</title>
-      <link>/home/tags/</link>
-      <pubDate>Wed, 20 Sep 2017 00:00:00 -0500</pubDate>
-      
-      <guid>/home/tags/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Contact</title>
       <link>/home/contact/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
       
       <guid>/home/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tags</title>
+      <link>/home/tags/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 -0500</pubDate>
+      
+      <guid>/home/tags/</guid>
       <description></description>
     </item>
     
