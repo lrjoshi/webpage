@@ -9,7 +9,7 @@ title = "Next generation sequencing"
 summary = "Using NGS tools for various projects."
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "miseq.png"
+image_preview = "seq.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
@@ -23,7 +23,7 @@ math = false
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "miseq.png"
+image = "seq.jpg"
 caption = "Running Illumina Miseq"
 
 +++

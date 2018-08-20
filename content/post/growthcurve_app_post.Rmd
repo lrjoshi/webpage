@@ -11,6 +11,6 @@ I designed this shiny based app to generate growth curves. This app is based on 
 
 ```{r echo=FALSE, warning=FALSE, error=FALSE}
 knitr::include_app("https://heartsdsu.shinyapps.io/gcshiny/",
-                   height = "1600px")
+                   height = "600px")
 
 ```
