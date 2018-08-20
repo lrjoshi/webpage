@@ -35,7 +35,7 @@ selected = false
 #projects = [" "]
 
 # Links (optional).
-url_pdf = "http://lokfiles.netlify.com/sva-adaptove.pdf"
+url_pdf = "http://lokfiles.netlify.com/sva-adaptive.pdf"
 url_source = "http://jvi.asm.org/content/92/3/e01717-17.short"
 url_preprint = ""
 url_code = ""
