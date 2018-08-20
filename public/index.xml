@@ -11,6 +11,18 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Virus Growth Curve Generator App</title>
+      <link>/post/growthcurve_app_post/</link>
+      <pubDate>Mon, 20 Aug 2018 21:13:14 -0500</pubDate>
+      
+      <guid>/post/growthcurve_app_post/</guid>
+      <description>&lt;p&gt;I designed this shiny based app to generate growth curves. This app is based on ggplot and dplyr functions.You can &lt;a href=&#34;https://github.com/lrjoshi/files/blob/master/public/c159s.csv&#34;&gt;download the sample data here&lt;/a&gt;.Codes are available on my &lt;a href=&#34;https://github.com/lrjoshi/gcplotR&#34;&gt;Github&lt;/a&gt;.If the app below is not active, you can click &lt;strong&gt;Reload&lt;/strong&gt; button below. You can see the sample output graph below. &lt;img src=&#34;http://lokfiles.netlify.com/graph.png&#34; /&gt;&lt;/p&gt;
+&lt;iframe src=&#34;https://heartsdsu.shinyapps.io/gcshiny/?showcase=0&#34; width=&#34;672&#34; height=&#34;1600px&#34;&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Creating 96-Well Plates in R</title>
       <link>/post/2015-07-23-r-rmarkdown/</link>
       <pubDate>Mon, 23 Jul 2018 21:13:14 -0500</pubDate>
@@ -431,18 +443,6 @@ investigation.&lt;/p&gt;
       <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Senecavirus A (SVA) is an emerging picornavirus that has been associated with vesicular disease and neonatal mortality in swine. Many aspects of SVA infection biology and pathogenesis, however, remain unknown. Here the pathogenesis of SVA was investigated in finishing pigs. Animals were inoculated via the oronasal route with SVA strain SD15-26 and monitored for clinical signs and lesions associated with SVA infection. Viraemia was assessed in serum and virus shedding monitored in oral and nasal secretions and faeces by real-time reverse transcriptase quantitative PCR (RT-qPCR) and/or virus isolation. Additionally, viral load and tissue distribution were assessed during acute infection and following convalescence from disease. Clinical signs characterized by lethargy and lameness were first observed on day 4 post-inoculation (pi) and persisted for approximately 2–10 days. Vesicular lesions were first observed on day 4 pi on the snout and/or feet, affecting the coronary bands, dewclaws, interdigital space and heel/sole of SVA-infected animals. A short-term viraemia was observed between days 3 and 10 pi, whereas virus shedding was detected between days 1 and 28 pi in oral and nasal secretions and faeces. Notably, RT-qPCR and in situ hybridization (ISH) performed on tissues collected on day 38 pi revealed the presence of SVA RNA in the tonsils of all SVA-infected animals. Serological responses to SVA were characterized by early neutralizing antibody responses (day 5 pi), which coincided with decreased levels of viraemia, virus shedding and viral load in tissues. This study provides significant insights into the pathogenesis and infectious dynamics of SVA in swine.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Immunogenicity of a Recombinant Parapoxvirus Expressing the Spike Protein of Porcine Epidemic Diarrhea Virus.</title>
-      <link>/publication/orfv-pedv/</link>
-      <pubDate>Mon, 01 Aug 2016 00:00:00 -0500</pubDate>
-      
-      <guid>/publication/orfv-pedv/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The parapoxvirus Orf virus (ORFV), has long been recognized for its immunomodulatory properties in permissive and non-permissive animal species. Here, a new recombinant ORFV expressing the full-length spike (S) protein of Porcine epidemic diarrhea virus (PEDV) was generated and its immunogenicity and protective efficacy were evaluated in pigs. The PEDV S was inserted into the ORFV121 gene locus, an immunomodulatory gene that inhibits activation of the NF-κB signalling pathway and contributes to ORFV virulence in the natural host. The recombinant ORFV-PEDV-S virus efficiently and stably expressed the PEDV S protein in cell culture in vitro. Three intramuscular (IM) immunizations with the recombinant ORFV-PEDV-S in 3-week-old pigs elicited robust serum IgG, IgA and neutralizing antibody responses against PEDV. Additionally, IM immunization with the recombinant ORFV-PEDV-S virus protected pigs from clinical signs of porcine epidemic diarrhoea (PED) and reduced virus shedding in faeces upon challenge infection. These results demonstrate the suitability of ORFV121 gene locus as an insertion site for heterologous gene expression and delivery by ORFV-based viral vectors. Additionally, the results provide evidence of the potential of ORFV as a vaccine delivery vector for enteric viral diseases of swine. This study may have important implications for future development of ORFV-vectored vaccines for swine.&lt;/p&gt;
 </description>
     </item>
     

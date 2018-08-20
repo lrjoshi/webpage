@@ -1,0 +1,16 @@
+---
+title: "Virus Growth Curve Generator App"
+date: 2018-08-20T21:13:14-05:00
+categories: ["R"]
+tags: ["Virus", "R", "Growth Curve"]
+runtime: shiny
+---
+I designed this shiny based app to generate growth curves. This app is based on ggplot and dplyr functions.You can [download the sample data here](https://github.com/lrjoshi/files/blob/master/public/c159s.csv).Codes are available on my [Github](https://github.com/lrjoshi/gcplotR).If the app below is not active, you can click **Reload** button below. You can see the sample output graph below.
+![](http://lokfiles.netlify.com/graph.png)
+
+
+```{r echo=FALSE, warning=FALSE, error=FALSE}
+knitr::include_app("https://heartsdsu.shinyapps.io/gcshiny/",
+                   height = "1600px")
+
+```

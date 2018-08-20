@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Mon, 23 Jul 2018 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 20 Aug 2018 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Virus Growth Curve Generator App</title>
+      <link>/post/growthcurve_app_post/</link>
+      <pubDate>Mon, 20 Aug 2018 21:13:14 -0500</pubDate>
+      
+      <guid>/post/growthcurve_app_post/</guid>
+      <description>I designed this shiny based app to generate growth curves. This app is based on ggplot and dplyr functions.You can download the sample data here.Codes are available on my Github.If the app below is not active, you can click Reload button below. You can see the sample output graph below. </description>
+    </item>
     
     <item>
       <title>Creating 96-Well Plates in R</title>
