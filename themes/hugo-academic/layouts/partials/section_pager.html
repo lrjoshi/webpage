@@ -1,14 +1,10 @@
-<div class="post-nav">
-  {{if .NextInSection}}
-  <div class="post-nav-item">
-    <div class="meta-nav">{{ i18n "next" }}</div>
-    <a href="{{.NextInSection.Permalink}}" rel="next">{{.NextInSection.Title}}</a>
-  </div>
-  {{end}}
-  {{if .PrevInSection}}
-  <div class="post-nav-item">
-    <div class="meta-nav">{{ i18n "previous" }}</div>
-    <a href="{{.PrevInSection.Permalink}}" rel="prev">{{.PrevInSection.Title}}</a>
-  </div>
-  {{end}}
-</div>
+<div id="disqus_thread"></div>
+<script>
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://larnsce.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://lokraj.disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
