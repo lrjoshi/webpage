@@ -77,6 +77,15 @@
     
     <url>
     
+      <loc>/post/racepcr-post/</loc>
+      <lastmod>2018-05-13T00:00:00-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/publication/sva-adaptive/</loc>
       <lastmod>2018-02-01T00:00:00-06:00</lastmod>
     </url>
@@ -331,6 +340,16 @@
     
       <loc>/tags/orf-virus/</loc>
       <lastmod>2018-05-27T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/pcr/</loc>
+      <lastmod>2018-05-13T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     

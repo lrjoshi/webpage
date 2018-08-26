@@ -321,6 +321,74 @@ fc_SE
     </item>
     
     <item>
+      <title>RacePCR- R package for designing primers for Race PCR</title>
+      <link>/post/racepcr-post/</link>
+      <pubDate>Tue, 20 Mar 2018 00:00:00 -0500</pubDate>
+      
+      <guid>/post/racepcr-post/</guid>
+      <description>
+
+&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+
+&lt;p&gt;You can use this package to design 3&amp;rsquo; and 5&amp;rsquo;primers for Race PCR. The design is based on as described by Clonetech Race PCR manual. The resulting primers will have vector sequence automatically added to them. Source code is available at my &lt;a href=&#34;https://github.com/lrjoshi/RacepcR&#34; target=&#34;_blank&#34;&gt;Github page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;library(devtools)&lt;/p&gt;
+
+&lt;p&gt;install_github(&amp;ldquo;lrjoshi/RacepcR&amp;rdquo;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;getDNA(dnaseq) #enter DNA Sequence and check length&lt;/p&gt;
+
+&lt;p&gt;quality (dnaseq) #to see if your sequence contains character other than AGTC.&lt;/p&gt;
+
+&lt;p&gt;gcbarplot(dnaseq) #gives barplot of nucleotide content&lt;/p&gt;
+
+&lt;p&gt;get5prime(dnaseq,x) #gives you 5&amp;rsquo; primer&lt;/p&gt;
+
+&lt;p&gt;get3prime(dnaseq,y) #gives you 3&amp;rsquo; primer&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;arguments&#34;&gt;Arguments&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;dnaseq : it is the sequence of your DNA. For eg : &amp;ldquo;aaggcctt&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;x  :position where you want to start your 5&amp;rsquo; primer&lt;/p&gt;
+
+&lt;p&gt;y  :position where you want to start your 3&amp;rsquo; primer&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;note&#34;&gt;Note&lt;/h2&gt;
+
+&lt;p&gt;This package depends on Biostrings package. So, you should have already installed Biostrings package from Bioconductor.&lt;/p&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;library (RacepcR)&lt;/p&gt;
+
+&lt;p&gt;library(Biostrings)&lt;/p&gt;
+
+&lt;p&gt;getDNA(&amp;ldquo;aaggccttcc&amp;rdquo;)&lt;/p&gt;
+
+&lt;p&gt;quality (&amp;ldquo;aaggcct&amp;rdquo;)&lt;/p&gt;
+
+&lt;p&gt;gcbarplot(&amp;ldquo;aaaaagccggt&amp;rdquo;)&lt;/p&gt;
+
+&lt;p&gt;get5prime(&amp;ldquo;aaaggcggcggcttcggcgcgctcgtgctgctgctgcggcgctcctttcgctcgtcgctgctttctctcgct&amp;rdquo;,30)&lt;/p&gt;
+
+&lt;p&gt;get3prime(&amp;ldquo;aaaggcggccccctcttcggccttcgctgctgctgcggcgcggctcgcgctgctgctttgctgctcgggctcgt&amp;rdquo;,10)&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Adaptive immune responses following Senecavirus A infection in pigs</title>
       <link>/publication/sva-adaptive/</link>
       <pubDate>Thu, 01 Feb 2018 00:00:00 -0600</pubDate>
@@ -431,18 +499,6 @@ and vesicular cases. SVA is clinically and economically
 important due to its resemblance with vesicular diseases,
 so the diagnosis tools are critical to confirm the initial
 investigation.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Pathogenesis of Senecavirus A in finishing pigs</title>
-      <link>/publication/sva-pathogenesis/</link>
-      <pubDate>Fri, 16 Dec 2016 00:00:00 -0600</pubDate>
-      
-      <guid>/publication/sva-pathogenesis/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Senecavirus A (SVA) is an emerging picornavirus that has been associated with vesicular disease and neonatal mortality in swine. Many aspects of SVA infection biology and pathogenesis, however, remain unknown. Here the pathogenesis of SVA was investigated in finishing pigs. Animals were inoculated via the oronasal route with SVA strain SD15-26 and monitored for clinical signs and lesions associated with SVA infection. Viraemia was assessed in serum and virus shedding monitored in oral and nasal secretions and faeces by real-time reverse transcriptase quantitative PCR (RT-qPCR) and/or virus isolation. Additionally, viral load and tissue distribution were assessed during acute infection and following convalescence from disease. Clinical signs characterized by lethargy and lameness were first observed on day 4 post-inoculation (pi) and persisted for approximately 2–10 days. Vesicular lesions were first observed on day 4 pi on the snout and/or feet, affecting the coronary bands, dewclaws, interdigital space and heel/sole of SVA-infected animals. A short-term viraemia was observed between days 3 and 10 pi, whereas virus shedding was detected between days 1 and 28 pi in oral and nasal secretions and faeces. Notably, RT-qPCR and in situ hybridization (ISH) performed on tissues collected on day 38 pi revealed the presence of SVA RNA in the tonsils of all SVA-infected animals. Serological responses to SVA were characterized by early neutralizing antibody responses (day 5 pi), which coincided with decreased levels of viraemia, virus shedding and viral load in tissues. This study provides significant insights into the pathogenesis and infectious dynamics of SVA in swine.&lt;/p&gt;
 </description>
     </item>
     

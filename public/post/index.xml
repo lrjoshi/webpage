@@ -42,6 +42,19 @@ R MarkdownFirst load all the required packages</description>
     </item>
     
     <item>
+      <title>RacePCR- R package for designing primers for Race PCR</title>
+      <link>/post/racepcr-post/</link>
+      <pubDate>Tue, 20 Mar 2018 00:00:00 -0500</pubDate>
+      
+      <guid>/post/racepcr-post/</guid>
+      <description>Description You can use this package to design 3&amp;rsquo; and 5&amp;rsquo;primers for Race PCR. The design is based on as described by Clonetech Race PCR manual. The resulting primers will have vector sequence automatically added to them. Source code is available at my Github page.
+Installation  library(devtools)
+install_github(&amp;ldquo;lrjoshi/RacepcR&amp;rdquo;)
+ Usage  getDNA(dnaseq) #enter DNA Sequence and check length
+quality (dnaseq) #to see if your sequence contains character other than AGTC.</description>
+    </item>
+    
+    <item>
       <title>Working with NCBI SRA files</title>
       <link>/post/getting-started/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
