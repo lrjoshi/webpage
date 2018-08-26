@@ -12,6 +12,11 @@ summary = "This package can be used to design gene specific primers (GSP) for Ra
 image = "headers/pcr.JPG"
 caption = " "
 
+[[gallery_item]]
+album = "1"
+image = ""
+caption = ""
+
 
 +++
 
