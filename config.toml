@@ -252,6 +252,9 @@ enableGitInfo = false
   # Align the main menu to the right of the page? (true/false)
   align_right = true
 
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+
 [[menu.main]]
   name = "Home"
   url = "#about"

@@ -12,10 +12,10 @@
     
     <item>
       <title>Virus Growth Curve Generator App</title>
-      <link>/post/growthcurve_app_post/</link>
+      <link>/2018/08/20/virus-growth-curve-generator-app/</link>
       <pubDate>Mon, 20 Aug 2018 21:13:14 -0500</pubDate>
       
-      <guid>/post/growthcurve_app_post/</guid>
+      <guid>/2018/08/20/virus-growth-curve-generator-app/</guid>
       <description>&lt;p&gt;I designed this shiny based app to generate growth curves. This app is based on ggplot and dplyr functions.You can try by downloading &lt;a href=&#34;https://github.com/lrjoshi/files/blob/master/public/c159s.csv&#34;&gt;sample data here&lt;/a&gt;.Codes are available on my &lt;a href=&#34;https://github.com/lrjoshi/gcplotR&#34;&gt;Github&lt;/a&gt;.Sometimes, the app goes to idle state.You can activate it by clicking &lt;strong&gt;Reload&lt;/strong&gt; button below. Here is the sample output. &lt;img src=&#34;http://lokfiles.netlify.com/graph.png&#34; /&gt;&lt;/p&gt;
 &lt;iframe src=&#34;https://heartsdsu.shinyapps.io/gcshiny/?showcase=0&#34; width=&#34;672&#34; height=&#34;600px&#34;&gt;
 &lt;/iframe&gt;
@@ -24,10 +24,10 @@
     
     <item>
       <title>Creating 96-Well Plates in R</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
+      <link>/2018/07/23/creating-96-well-plates-in-r/</link>
       <pubDate>Mon, 23 Jul 2018 21:13:14 -0500</pubDate>
       
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
+      <guid>/2018/07/23/creating-96-well-plates-in-r/</guid>
       <description>&lt;p&gt;This week I did some virus neutralization test. I wanted to show the results exactly I saw in 96-well plate. I was looking if there is any package in R that can actually do this. Actually there is one (or might be more). I found a package called &lt;strong&gt;platetools&lt;/strong&gt; that can plot values in plates.&lt;/p&gt;
 &lt;p&gt;I wan’t to show how I did it.&lt;/p&gt;
 &lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
@@ -195,10 +195,10 @@ z_grid(data = data$vals,
     
     <item>
       <title>RNA-Seq Data Analysis in R</title>
-      <link>/post/second-post/</link>
+      <link>/2018/05/20/rna-seq-data-analysis-in-r/</link>
       <pubDate>Sun, 20 May 2018 00:00:00 -0500</pubDate>
       
-      <guid>/post/second-post/</guid>
+      <guid>/2018/05/20/rna-seq-data-analysis-in-r/</guid>
       <description>&lt;p&gt;RNA-Seq data analysis can be complicated. Softwares with graphical user interface like CLC Workbench have made RNA-Seq data analysis quite easier but often we don&amp;rsquo;t know how the algorithm is working especially if you are from biology background like me. I decided to run a small simulation to understand how this works.It is amazing how a single R package can do things like read aligning and read counts in a few lines of codes.&lt;/p&gt;
 
 &lt;p&gt;Install Rsubread package in R.&lt;/p&gt;
@@ -322,10 +322,10 @@ fc_SE
     
     <item>
       <title>RacePCR- R package for designing primers for Race PCR</title>
-      <link>/post/racepcr-post/</link>
+      <link>/2018/03/20/racepcr--r-package-for-designing-primers-for-race-pcr/</link>
       <pubDate>Tue, 20 Mar 2018 00:00:00 -0500</pubDate>
       
-      <guid>/post/racepcr-post/</guid>
+      <guid>/2018/03/20/racepcr--r-package-for-designing-primers-for-race-pcr/</guid>
       <description>
 
 &lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
