@@ -5,7 +5,7 @@ date = 2018-03-20T00:00:00
 lastmod = 2018-05-13T00:00:00
 draft = false
 
-tags = ["R","PCR","Virus"]
+tags = ["R","PCR"]
 summary = "This package can be used to design gene specific primers (GSP) for Race PCR."
 
 [header]
