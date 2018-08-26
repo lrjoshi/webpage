@@ -16,8 +16,6 @@ caption = " "
 album = "1"
 image = ""
 caption = ""
-
-
 +++
 
 
