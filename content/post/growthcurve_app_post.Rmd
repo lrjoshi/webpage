@@ -10,7 +10,7 @@ I designed this shiny based app to generate growth curves. This app is based on 
 
 
 ```{r echo=FALSE, warning=FALSE, error=FALSE}
-knitr::include_app("https://heartsdsu.shinyapps.io/gcshiny/",
+knitr::include_app("https://heartsdsu.shinyapps.io/gcShiny/",
                    height = "600px")
 
 ```
