@@ -18,7 +18,7 @@
       <pubDate>Mon, 20 Aug 2018 21:13:14 -0500</pubDate>
       
       <guid>/2018/08/20/virus-growth-curve-generator-app/</guid>
-      <description>I designed this shiny based app to generate growth curves. This app is based on ggplot and dplyr functions.You can try by downloading sample data here.Codes are available on my Github.Sometimes, the app goes to idle state.You can activate it by clicking Reload button below. Here is the sample output. </description>
+      <description>I designed this Shiny app to generate growth curves. This app is based on ggplot and dplyr functions.You can try by downloading sample data here.Codes are available on my Github.Sometimes, the app goes to idle state.You can activate it by clicking Reload button below. Here is the sample output. </description>
     </item>
     
     <item>

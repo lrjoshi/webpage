@@ -16,7 +16,7 @@
       <pubDate>Mon, 20 Aug 2018 21:13:14 -0500</pubDate>
       
       <guid>/2018/08/20/virus-growth-curve-generator-app/</guid>
-      <description>&lt;p&gt;I designed this shiny based app to generate growth curves. This app is based on ggplot and dplyr functions.You can try by downloading &lt;a href=&#34;https://github.com/lrjoshi/files/blob/master/public/c159s.csv&#34;&gt;sample data here&lt;/a&gt;.Codes are available on my &lt;a href=&#34;https://github.com/lrjoshi/gcplotR&#34;&gt;Github&lt;/a&gt;.Sometimes, the app goes to idle state.You can activate it by clicking &lt;strong&gt;Reload&lt;/strong&gt; button below. Here is the sample output. &lt;img src=&#34;http://lokfiles.netlify.com/graph.png&#34; /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;I designed this &lt;a href=&#34;https://heartsdsu.shinyapps.io/gcShiny/&#34;&gt;Shiny app&lt;/a&gt; to generate growth curves. This app is based on ggplot and dplyr functions.You can try by downloading &lt;a href=&#34;https://github.com/lrjoshi/files/blob/master/public/c159s.csv&#34;&gt;sample data here&lt;/a&gt;.Codes are available on my &lt;a href=&#34;https://github.com/lrjoshi/gcplotR&#34;&gt;Github&lt;/a&gt;.Sometimes, the app goes to idle state.You can activate it by clicking &lt;strong&gt;Reload&lt;/strong&gt; button below. Here is the sample output. &lt;img src=&#34;http://lokfiles.netlify.com/graph.png&#34; /&gt;&lt;/p&gt;
 &lt;iframe src=&#34;https://heartsdsu.shinyapps.io/gcShiny/?showcase=0&#34; width=&#34;672&#34; height=&#34;600px&#34;&gt;
 &lt;/iframe&gt;
 </description>
