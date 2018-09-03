@@ -11,6 +11,29 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Shiny App for Designing Primers for DNA Cloning</title>
+      <link>/2018/09/01/shiny-app-for-designing-primers-for-dna-cloning/</link>
+      <pubDate>Sat, 01 Sep 2018 21:13:14 -0500</pubDate>
+      
+      <guid>/2018/09/01/shiny-app-for-designing-primers-for-dna-cloning/</guid>
+      <description>&lt;p&gt;Cloning is one of the most widely used tool in molecular biology. Cloning primers typically contain target sequence and restriction site as overhang. Designing these primers manually can be time consuming and chances of errors are high. This &lt;a href=&#34;https://heartsdsu.shinyapps.io/cloningApp/&#34;&gt;Shiny app&lt;/a&gt; is designed to automate primer designing process for DNA cloning.&lt;/p&gt;
+&lt;iframe src=&#34;https://heartsdsu.shinyapps.io/cloningApp/?showcase=0&#34; width=&#34;672&#34; height=&#34;600px&#34;&gt;
+&lt;/iframe&gt;
+&lt;p&gt;Basically, what this app does is :&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Extracts target sequence from the input DNA. You can choose number of base pairs you want. Default is 22.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;For reverse primers it reverse complements the target sequence.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Adds restriction sites to the 3’ end of the primer. You can select among the list of more than 200 restriction enzymes. It uses a database from the New England Biolabs.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Then it adds 5 extra base pairs to the 3’ end of the primers.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You also get some other useful information about your primer. This app will look for the restriction enzyme sequence within the DNA sequence that you enter. If the sequence is present you will see a table showing the location of restriction sites. If the restricion site is not present, you will see an empty table. Also, you can see how the selected restrcion enzymes cut.&lt;/p&gt;
+&lt;p&gt;You can try app below.There is a sample DNA sequence for you to play around for the first time. Sometimes, the app goes to idle state.You can activate it by clicking &lt;strong&gt;Reload&lt;/strong&gt; button below.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://heartsdsu.shinyapps.io/cloningApp/&#34;&gt;Click here to visit app page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Codes for this app are available on my &lt;a href=&#34;https://github.com/lrjoshi/cloningApp&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Virus Growth Curve Generator App</title>
       <link>/2018/08/20/virus-growth-curve-generator-app/</link>
       <pubDate>Mon, 20 Aug 2018 21:13:14 -0500</pubDate>
@@ -443,63 +466,6 @@ fc_SE
       
       <guid>/publication/sva-brazil/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Neonatal pig mortality associated with senecavirus A.</title>
-      <link>/publication/sva-embraba/</link>
-      <pubDate>Sun, 25 Dec 2016 00:00:00 -0600</pubDate>
-      
-      <guid>/publication/sva-embraba/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Senecavirus A (SVA) is an emerging picornavirus that
-has been associated with outbreaks of vesicular disease
-in swine. In 2015, neonatal mortality affecting piglets
-of 07 days of age correlated with SVA, was reported
-in Brazil. Here, we present an investigation carried
-on during 20152016 in five farrowtofinish swine operations
-in Southern Brazil showing an increased
-neonatal mortality and also vesicular disease that
-have been associated to SVA infection. Piglets were
-lethargic and had a watery diarrhea. The mortality
-rate increased in 23% and in some littermates a 100%
-of mortality was observed. Despite of a relatively fast
-onset of wasting syndrome progressing to mortality, all
-herds recovered to baseline mortality levels within 410
-days. Piglets were necropsied and tissue samples were
-collected for histopathology, RTPCR for SVA detection
-targeting the VP1 VP3 region, and for viral isolation in
-H1299 cell culture. Genome sequences of VP1 gene of
-five SVA isolates were compared to other SVA sequences
-available on GenBank. Necropsy of six piglets revealed
-empty stomach and mesocolonic edema. In general,
-it was observed enlargement and edema of inguinal
-lymph nodes, pulmonary edema, ascites and ulcerative
-lesions on the snout and coronary band. Microscopic
-lesions were characterized by necrotic epidermitis and
-dermatitis of coronary band, mild enteritis with villus
-degeneration on small intestine, marked mesocolon
-edema and multifocal hemorrhage with lung edema.
-Senecavirus A was detected by RTPCR in tonsil, lung,
-liver, intestine and coronary band. SVA was isolated in
-cell culture from tonsil, lung, intestine and coronary band
-from piglets of all farms. Sequence comparisons based
-on a region of the VP1 gene (541 base pairs) revealed
-that the Brazilian isolates characterized here share 96-
-99% of nucleotide (nt) identity with contemporary
-Brazilian isolates, 9598% nt identity with US and 9093%
-nt identity with the prototype strain SVV001. SVA
-was associated with neonatal mortality based on RTPCR,
-virus isolation and sequencing results. The genetic
-analysis shows the diversity of the Brazilian SVA isolates
-and that more studies are needed to demonstrate if there
-are differences between SVA from neonatal mortality
-and vesicular cases. SVA is clinically and economically
-important due to its resemblance with vesicular diseases,
-so the diagnosis tools are critical to confirm the initial
-investigation.&lt;/p&gt;
-</description>
     </item>
     
   </channel>

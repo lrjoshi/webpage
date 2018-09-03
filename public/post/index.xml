@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Mon, 20 Aug 2018 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 01 Sep 2018 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shiny App for Designing Primers for DNA Cloning</title>
+      <link>/2018/09/01/shiny-app-for-designing-primers-for-dna-cloning/</link>
+      <pubDate>Sat, 01 Sep 2018 21:13:14 -0500</pubDate>
+      
+      <guid>/2018/09/01/shiny-app-for-designing-primers-for-dna-cloning/</guid>
+      <description>Cloning is one of the most widely used tool in molecular biology. Cloning primers typically contain target sequence and restriction site as overhang. Designing these primers manually can be time consuming and chances of errors are high. This Shiny app is designed to automate primer designing process for DNA cloning.
+Basically, what this app does is :
+Extracts target sequence from the input DNA. You can choose number of base pairs you want.</description>
+    </item>
     
     <item>
       <title>Virus Growth Curve Generator App</title>
