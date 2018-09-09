@@ -16,8 +16,8 @@
       <pubDate>Sat, 01 Sep 2018 21:13:14 -0500</pubDate>
       
       <guid>/2018/09/01/shiny-app-for-designing-primers-for-dna-cloning/</guid>
-      <description>&lt;p&gt;Cloning is one of the most widely used tool in molecular biology. Cloning primers typically contain target sequence and restriction site as overhang. Designing these primers manually can be time consuming and chances of errors are high. This &lt;a href=&#34;https://heartsdsu.shinyapps.io/cloningApp/&#34;&gt;Shiny app&lt;/a&gt; is designed to automate primer designing process for DNA cloning.&lt;/p&gt;
-&lt;iframe src=&#34;https://heartsdsu.shinyapps.io/cloningApp/?showcase=0&#34; width=&#34;672&#34; height=&#34;600px&#34;&gt;
+      <description>&lt;p&gt;Cloning is one of the most widely used tool in molecular biology. Cloning primers typically contain target sequence and restriction site as overhang. Designing these primers manually can be time consuming and chances of errors are high. This &lt;a href=&#34;https://lokraj.shinyapps.io/cloningApp/&#34;&gt;Shiny app&lt;/a&gt; is designed to automate primer designing process for DNA cloning.&lt;/p&gt;
+&lt;iframe src=&#34;https://lokraj.shinyapps.io/cloningApp/?showcase=0&#34; width=&#34;672&#34; height=&#34;600px&#34;&gt;
 &lt;/iframe&gt;
 &lt;p&gt;Basically, what this app does is :&lt;/p&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
@@ -28,7 +28,7 @@
 &lt;/ol&gt;
 &lt;p&gt;You also get some other useful information about your primer. This app will look for the restriction enzyme sequence within the DNA sequence that you enter. If the sequence is present you will see a table showing the location of restriction sites. If the restricion site is not present, you will see an empty table. Also, you can see how the selected restrcion enzymes cut.&lt;/p&gt;
 &lt;p&gt;You can try app below.There is a sample DNA sequence for you to play around for the first time. Sometimes, the app goes to idle state.You can activate it by clicking &lt;strong&gt;Reload&lt;/strong&gt; button below.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://heartsdsu.shinyapps.io/cloningApp/&#34;&gt;Click here to visit app page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lokraj.shinyapps.io/cloningApp/&#34;&gt;Click here to visit app page&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Codes for this app are available on my &lt;a href=&#34;https://github.com/lrjoshi/cloningApp&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
@@ -39,8 +39,8 @@
       <pubDate>Mon, 20 Aug 2018 21:13:14 -0500</pubDate>
       
       <guid>/2018/08/20/virus-growth-curve-generator-app/</guid>
-      <description>&lt;p&gt;I designed this &lt;a href=&#34;https://heartsdsu.shinyapps.io/gcShiny/&#34;&gt;Shiny app&lt;/a&gt; to generate growth curves. This app is based on ggplot and dplyr functions.You can try by downloading &lt;a href=&#34;https://github.com/lrjoshi/files/blob/master/public/c159s.csv&#34;&gt;sample data here&lt;/a&gt;.Codes are available on my &lt;a href=&#34;https://github.com/lrjoshi/gcplotR&#34;&gt;Github&lt;/a&gt;.Sometimes, the app goes to idle state.You can activate it by clicking &lt;strong&gt;Reload&lt;/strong&gt; button below. Here is the sample output. &lt;img src=&#34;http://lokfiles.netlify.com/graph.png&#34; /&gt;&lt;/p&gt;
-&lt;iframe src=&#34;https://heartsdsu.shinyapps.io/gcShiny/?showcase=0&#34; width=&#34;672&#34; height=&#34;600px&#34;&gt;
+      <description>&lt;p&gt;I designed this &lt;a href=&#34;https://lokraj.shinyapps.io/gcplotR/&#34;&gt;Shiny app&lt;/a&gt; to generate growth curves. This app is based on ggplot and dplyr functions.You can try by downloading &lt;a href=&#34;https://github.com/lrjoshi/files/blob/master/public/c159s.csv&#34;&gt;sample data here&lt;/a&gt;.Codes are available on my &lt;a href=&#34;https://github.com/lrjoshi/gcplotR&#34;&gt;Github&lt;/a&gt;.Sometimes, the app goes to idle state.You can activate it by clicking &lt;strong&gt;Reload&lt;/strong&gt; button below. Here is the sample output. &lt;img src=&#34;http://lokfiles.netlify.com/graph.png&#34; /&gt;&lt;/p&gt;
+&lt;iframe src=&#34;https://lokraj.shinyapps.io/gcplotR/?showcase=0&#34; width=&#34;672&#34; height=&#34;600px&#34;&gt;
 &lt;/iframe&gt;
 </description>
     </item>
