@@ -13,7 +13,7 @@ weight : 58
 library (ggplot2)
 library(plotly)
 Year= c(2015,2016,2017,2018)
-Citations =c(4,6,32,30)
+Citations =c(4,6,32,36)
 
 data= data.frame(Year, Citations)
 
@@ -27,6 +27,7 @@ ggplotly(p)
 
 #Awards
 ***
+>Diversity Schlorship from R Studio to attend rstusio::conf(2019)
 
 >SDSU Sigma XI Best PhD Paper Award (2018)
 
