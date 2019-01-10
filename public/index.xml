@@ -11,6 +11,69 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Download CSV into R Studio from Github</title>
+      <link>/2019/01/09/download-csv-into-r-studio-from-github/</link>
+      <pubDate>Wed, 09 Jan 2019 21:13:14 -0500</pubDate>
+      
+      <guid>/2019/01/09/download-csv-into-r-studio-from-github/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;You can use “readr” package to download CSV file and R data file from the github.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Steps&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Go to the github repository link where you have the CSV file&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Click on the &lt;strong&gt;raw&lt;/strong&gt; option present on the top right of the data&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;This will open a new window in the browser&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The link should be like &lt;a href=&#34;https://raw.githubusercontent.com/..&#34; class=&#34;uri&#34;&gt;https://raw.githubusercontent.com/..&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You have to use this link to download csv file from the Github&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library (readr)
+
+urlfile=&amp;quot;https://raw.githubusercontent.com/lrjoshi/webpage/master/public/post/c159s.csv&amp;quot;
+
+mydata&amp;lt;-read_csv(url(urlfile))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Parsed with column specification:
+## cols(
+##   Experiment = col_character(),
+##   Virus = col_character(),
+##   Cell = col_character(),
+##   MOI = col_double(),
+##   hpi = col_integer(),
+##   Titer = col_double()
+## )&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#lets have a peek into the data
+head(mydata)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 6 x 6
+##   Experiment Virus Cell    MOI   hpi Titer
+##   &amp;lt;chr&amp;gt;      &amp;lt;chr&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;int&amp;gt; &amp;lt;dbl&amp;gt;
+## 1 EXP I      C159S OFTu    0.1     0  4.75
+## 2 EXP I      C159S OFTu    0.1     6  2.75
+## 3 EXP I      C159S OFTu    0.1    12  2.75
+## 4 EXP I      C159S OFTu    0.1    24  5   
+## 5 EXP I      C159S OFTu    0.1    48  5.5 
+## 6 EXP I      C159S OFTu    0.1    72  7&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Detection of Fowlpox virus carrying distinct genome segments of Reticuloendotheliosis virus</title>
+      <link>/publication/fowlpox/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 -0600</pubDate>
+      
+      <guid>/publication/fowlpox/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Highlights&lt;/p&gt;
+
+&lt;p&gt;•Two distinct FWPV populations were detected in the skin of a wild bird affected with FWPV.&lt;/p&gt;
+
+&lt;p&gt;•Metagenomics revealed two FWPV genome populations containing the insertion of REV LTR or the full-length provirus.&lt;/p&gt;
+
+&lt;p&gt;•Detection of these distinct populations in other clinical samples of viral isolates suggest that this is a usual event.&lt;/p&gt;
+
+&lt;p&gt;•Passage of the FWPV-REV in cell culture resulted in loss of the full-length REV provirus, suggesting instability.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Shiny App for Designing Primers for DNA Cloning</title>
       <link>/2018/09/01/shiny-app-for-designing-primers-for-dna-cloning/</link>
       <pubDate>Sat, 01 Sep 2018 21:13:14 -0500</pubDate>
@@ -445,27 +508,6 @@ fc_SE
 
 &lt;p&gt;Papillomaviruses are a diverse group of viruses that are known to infect a wide range of animal species. Bovine papillomaviruses (BPVs) are divided into at least 21 genotypes (BPV1 to BPV21),  with most BPV isolates/strains described to date belonging to one of four genera, including Deltapapillomavirus, Xipapillomavirus, Epsilonpapillomavirus and Dyoxipapillomavirus. Here, we describe the identification and genetic characterization of a new BPV type in the genus Dyokappapapillomavirus. A farm in the state of New York, USA, reported chronic cases of vulvovaginitis in Holstein cows in 2016. Biopsies and/or swab samples collected from the vaginal mucosa were subjected to diagnostic investigation. Conventional diagnostic assays yielded negative results, and vaginal swab samples were subjected to viral metagenomic sequencing. Notably, BLAST searches revealed a papillomavirus genome with 7480 bp in length (67% nt sequence identity to BPV16). Additionally, phylogenetic analysis of the L1 gene of the papillomavirus identified here (tentatively named BPV22) revealed that it clusters with members of the genus Dyokappapapillomavirus. Interestingly, the recently identified BPV16, which was detected in fibropapilloma lesions in cattle also clusters within the Dyokappapapillomavirus group. Each virus, however, forms a separate branch in the phylogenetic tree. These results indicate that the putative BPV22 represents the second BPV within the genus Dyokappapapillomavirus.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>The S2 glycoprotein subunit of porcine epidemic diarrhea virus contains immunodominant neutralizing epitopes</title>
-      <link>/publication/pedv-s2/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 -0500</pubDate>
-      
-      <guid>/publication/pedv-s2/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The porcine epidemic diarrhea virus (PEDV) spike (S) protein is the major target of neutralizing antibodies against PEDV. Here immunodominant neutralizing epitopes of PEDV were identified using a panel of S-specific monoclonal antibodies (mAbs). Ten of eleven S-specific mAbs successfully neutralized PEDV infectivity in vitro. Notably, epitope mapping by peptide ELISAs revealed that nine of these mAbs recognized linear neutralizing epitopes located in the N-terminus of the S2 glycoprotein subunit (amino acids [aa] 744–759, 747–774 and/or 756–771). Additionally, one mAb recognized a neutralizing epitope located in the C-terminus of S2 (aa 1371–1377), while only one neutralizing mAb reacted against a region of the S1 glycoprotein subunit (aa 499–600). Notably, mAbs that recognized epitopes within the S2 subunit presented the highest neutralizing activity against PEDV. Together these results indicate that the S2 glycoprotein subunit contains major antigenic determinants and, perhaps, the immunodominant neutralizing epitopes of PEDV.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Genetic characterization and phylogenetic analysis of senecavirus A circulating in the US and in Brazil.</title>
-      <link>/publication/sva-brazil/</link>
-      <pubDate>Sun, 25 Dec 2016 00:00:00 -0600</pubDate>
-      
-      <guid>/publication/sva-brazil/</guid>
-      <description></description>
     </item>
     
   </channel>

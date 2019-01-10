@@ -7,10 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 18 Jul 2018 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 -0600</lastBuildDate>
     
 	<atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Detection of Fowlpox virus carrying distinct genome segments of Reticuloendotheliosis virus</title>
+      <link>/publication/fowlpox/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 -0600</pubDate>
+      
+      <guid>/publication/fowlpox/</guid>
+      <description>Abstract
+Highlights
+•Two distinct FWPV populations were detected in the skin of a wild bird affected with FWPV.
+•Metagenomics revealed two FWPV genome populations containing the insertion of REV LTR or the full-length provirus.
+•Detection of these distinct populations in other clinical samples of viral isolates suggest that this is a usual event.
+•Passage of the FWPV-REV in cell culture resulted in loss of the full-length REV provirus, suggesting instability.</description>
+    </item>
     
     <item>
       <title>Pathogenicity and cross-reactive immune responses of a historical and a contemporary Senecavirus A strains in pigs</title>

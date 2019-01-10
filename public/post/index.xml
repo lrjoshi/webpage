@@ -7,10 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sat, 01 Sep 2018 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 09 Jan 2019 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Download CSV into R Studio from Github</title>
+      <link>/2019/01/09/download-csv-into-r-studio-from-github/</link>
+      <pubDate>Wed, 09 Jan 2019 21:13:14 -0500</pubDate>
+      
+      <guid>/2019/01/09/download-csv-into-r-studio-from-github/</guid>
+      <description>You can use “readr” package to download CSV file and R data file from the github.
+Steps
+Go to the github repository link where you have the CSV file
+Click on the raw option present on the top right of the data
+This will open a new window in the browser
+The link should be like https://raw.githubusercontent.com/..
+You have to use this link to download csv file from the Github</description>
+    </item>
     
     <item>
       <title>Shiny App for Designing Primers for DNA Cloning</title>

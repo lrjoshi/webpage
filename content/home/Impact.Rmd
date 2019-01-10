@@ -12,8 +12,8 @@ weight : 58
 
 library (ggplot2)
 library(plotly)
-Year= c(2015,2016,2017,2018)
-Citations =c(4,6,32,36)
+Year= c(2015,2016,2017,2018,2019)
+Citations =c(4,6,32,46,1)
 
 data= data.frame(Year, Citations)
 
