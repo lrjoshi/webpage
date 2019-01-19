@@ -6,9 +6,9 @@ categories: ["R"]
 tags: ["R"]
 ---
 
-This week I did some virus neutralization test. I wanted to show the results exactly I saw in 96-well plate. I was looking if there is any package in R that can actually do this. Actually there is one (or might be more). I found a package called **platetools** that can plot values in plates. 
+This week I did some virus neutralization test and I was wondering if there is any way to show the results in 96-well plate format. I was trying to find if there is any R package that can do this. Actually there is one (or might be more). I found a package called **platetools** that can plot values in plate format. 
 
-I wan't to show how I did it.
+Let's see how I used this package.
 
 
 
@@ -45,6 +45,6 @@ z_grid(data = data$vals,
   ggtitle("Virus Neutralization Test")
 ```
 
-Here, the label is not useful because I am interested only in positive and negative. But can be useful in plotting ELISA plates. 
+Here, the label is not useful for me because I am interested only in positive and negative wells. But it can be useful in plotting ELISA plates. 
 
 

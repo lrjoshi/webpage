@@ -40,3 +40,5 @@ mydata<-read_csv(url(urlfile))
 head(mydata)
 
 ```
+
+You can use this method to dowload R data file from the github.

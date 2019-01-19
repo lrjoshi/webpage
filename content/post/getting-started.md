@@ -20,7 +20,7 @@ caption = ""
 
 +++
 
-Although seems straightforward, working with SRA files can be tricky for newbies. Here I have short description about how to download and work with SRA files. 
+Working with SRA files can be tricky sometimes. Here I have short description about how to download and process SRA files. 
 
 NGS read files can be downloaded using sra-toolkit. First you have to download latest version of **sra-toolkit** from their website. The file should be in **tar.gz** format.
 
@@ -41,11 +41,13 @@ Eg.
 ./fastq-dump
 ./prefetch 
 ```
+
 Suppose you want to download a SRA file named SRR6047337. Then simply use follwing command
+
 ```
 ./prefetch SRR6047337
 ```
-This will download SRR6047337.sra files. Don't see the file ? Well, here is the trick. All the files are downloaded in **home/ncbi/public/sra** folder. This prefetch command automatically creates a ncbi folder under home folder. 
+This will download SRR6047337.sra files. Don't see the file ? Well, here is the trick. All the files are downloaded in **home/ncbi/public/sra** folder. This prefetch command automatically creates a ncbi folder under the home folder. 
 
 
 Now, you need fastq files (may be paired or single) instead of .sra files. Use following command to convert **.sra** file to the fastq file.
