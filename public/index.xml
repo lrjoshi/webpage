@@ -25,9 +25,9 @@
 &lt;li&gt;&lt;p&gt;The link should be like &lt;a href=&#34;https://raw.githubusercontent.com/..&#34; class=&#34;uri&#34;&gt;https://raw.githubusercontent.com/..&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;You have to use this link to download csv file from the Github&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library (readr)
-
-urlfile=&amp;quot;https://raw.githubusercontent.com/lrjoshi/webpage/master/public/post/c159s.csv&amp;quot;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library (readr)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: package &amp;#39;readr&amp;#39; was built under R version 3.5.2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;urlfile=&amp;quot;https://raw.githubusercontent.com/lrjoshi/webpage/master/public/post/c159s.csv&amp;quot;
 
 mydata&amp;lt;-read_csv(url(urlfile))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Parsed with column specification:
@@ -36,20 +36,21 @@ mydata&amp;lt;-read_csv(url(urlfile))&lt;/code&gt;&lt;/pre&gt;
 ##   Virus = col_character(),
 ##   Cell = col_character(),
 ##   MOI = col_double(),
-##   hpi = col_integer(),
+##   hpi = col_double(),
 ##   Titer = col_double()
 ## )&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#lets have a peek into the data
 head(mydata)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## # A tibble: 6 x 6
 ##   Experiment Virus Cell    MOI   hpi Titer
-##   &amp;lt;chr&amp;gt;      &amp;lt;chr&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;int&amp;gt; &amp;lt;dbl&amp;gt;
+##   &amp;lt;chr&amp;gt;      &amp;lt;chr&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;
 ## 1 EXP I      C159S OFTu    0.1     0  4.75
 ## 2 EXP I      C159S OFTu    0.1     6  2.75
 ## 3 EXP I      C159S OFTu    0.1    12  2.75
 ## 4 EXP I      C159S OFTu    0.1    24  5   
 ## 5 EXP I      C159S OFTu    0.1    48  5.5 
 ## 6 EXP I      C159S OFTu    0.1    72  7&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can use this method to dowload R data file from the github.&lt;/p&gt;
 </description>
     </item>
     
@@ -84,13 +85,13 @@ head(mydata)&lt;/code&gt;&lt;/pre&gt;
 &lt;/iframe&gt;
 &lt;p&gt;Basically, what this app does is :&lt;/p&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;&lt;p&gt;Extracts target sequence from the input DNA. You can choose number of base pairs you want. Default is 22.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;For reverse primers it reverse complements the target sequence.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Adds restriction sites to the 3’ end of the primer. You can select among the list of more than 200 restriction enzymes. It uses a database from the New England Biolabs.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;For forward primer, it extracts sequences from 5 primer end. You can choose number of base pairs you want. Default is 22.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;For reverse primer, it extracts sequence from 3 prime end and reverse complements the sequence.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Then it adds restriction sites to the 3’ end of the primer. You can select among the list of more than 200 restriction enzymes. It uses a database from the New England Biolabs.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Then it adds 5 extra base pairs to the 3’ end of the primers.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;You also get some other useful information about your primer. This app will look for the restriction enzyme sequence within the DNA sequence that you enter. If the sequence is present you will see a table showing the location of restriction sites. If the restricion site is not present, you will see an empty table. Also, you can see how the selected restrcion enzymes cut.&lt;/p&gt;
-&lt;p&gt;You can try app below.There is a sample DNA sequence for you to play around for the first time. Sometimes, the app goes to idle state.You can activate it by clicking &lt;strong&gt;Reload&lt;/strong&gt; button below.&lt;/p&gt;
+&lt;p&gt;You also get some other useful information about your primer. This app will look for the restriction enzyme sequence within the DNA sequence that you enter. If the restriction site is present you will see a table showing the location of restriction sites. If the restricion site is not present, you will see an empty table. Also, you can see how the selected restrcion enzymes cut within their recognition sites.&lt;/p&gt;
+&lt;p&gt;You can try app below.There is a sample DNA sequence for you to play around. Sometimes, you might find the app in idle state.You can activate it by clicking &lt;strong&gt;Reload&lt;/strong&gt; button.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://lokraj.shinyapps.io/cloningApp/&#34;&gt;Click here to visit app page&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Codes for this app are available on my &lt;a href=&#34;https://github.com/lrjoshi/cloningApp&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
 </description>
@@ -114,8 +115,8 @@ head(mydata)&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Mon, 23 Jul 2018 21:13:14 -0500</pubDate>
       
       <guid>/2018/07/23/creating-96-well-plates-in-r/</guid>
-      <description>&lt;p&gt;This week I did some virus neutralization test. I wanted to show the results exactly I saw in 96-well plate. I was looking if there is any package in R that can actually do this. Actually there is one (or might be more). I found a package called &lt;strong&gt;platetools&lt;/strong&gt; that can plot values in plates.&lt;/p&gt;
-&lt;p&gt;I wan’t to show how I did it.&lt;/p&gt;
+      <description>&lt;p&gt;This week I did some virus neutralization test and I was wondering if there is any way to show the results in 96-well plate format. I was trying to find if there is any R package that can do this. Actually there is one (or might be more). I found a package called &lt;strong&gt;platetools&lt;/strong&gt; that can plot values in plate format.&lt;/p&gt;
+&lt;p&gt;Let’s see how I used this package.&lt;/p&gt;
 &lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;R Markdown&lt;/h1&gt;
 &lt;p&gt;First load all the required packages&lt;/p&gt;
@@ -229,10 +230,9 @@ data
 z_grid(data = data$vals,
        well = data$well,
        plate_id = plate_id) +
-  ggtitle(&amp;quot;Virus Neutralization Test&amp;quot;)
-## Warning: package &amp;#39;bindrcpp&amp;#39; was built under R version 3.4.4&lt;/code&gt;&lt;/pre&gt;
+  ggtitle(&amp;quot;Virus Neutralization Test&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Here, the label is not useful because I am interested only in positive and negative. But can be useful in plotting ELISA plates.&lt;/p&gt;
+&lt;p&gt;Here, the label is not useful for me because I am interested only in positive and negative wells. But it can be useful in plotting ELISA plates.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -285,7 +285,7 @@ z_grid(data = data$vals,
       <pubDate>Sun, 20 May 2018 00:00:00 -0500</pubDate>
       
       <guid>/2018/05/20/rna-seq-data-analysis-in-r/</guid>
-      <description>&lt;p&gt;RNA-Seq data analysis can be complicated. Softwares with graphical user interface like CLC Workbench have made RNA-Seq data analysis quite easier but often we don&amp;rsquo;t know how the algorithm is working especially if you are from biology background like me. I decided to run a small simulation to understand how this works.It is amazing how a single R package can do things like read aligning and read counts in a few lines of codes.&lt;/p&gt;
+      <description>&lt;p&gt;RNA-Seq data analysis can be complicated. Softwares with graphical user interface like CLC Workbench, have made RNA-Seq data analysis quite easier.However, they are expensive and in most of the cases you might not be able to tweak your analysis in the exact way you want. Another important aspect of learning RNA-Seq analysis is understanding the algorithms behind the analysis.To this end, I decided to run a small simulation to understand how RNA-Seq analysis algorithms work.It is amazing how a single R package can do things like read aligning, read mapping and read counts in few lines of codes.&lt;/p&gt;
 
 &lt;p&gt;Install Rsubread package in R.&lt;/p&gt;
 
@@ -299,7 +299,9 @@ biocLite(&amp;quot;Rsubread&amp;quot;)
 &lt;pre&gt;&lt;code&gt;library (Rsubread)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Actually for this simulation I created a small .fasta file pulling some of the sequences from the &lt;strong&gt;Senecavirus A&lt;/strong&gt; genome. I created a fasta file with few contigs each containing about 70-100 basepairs , and named each contig as read 1, read 2 and so on.And I pulled some sequences from the Zika virus. I will be aligning my reads using Senecavirus genome as a reference. So, Zika virus reads should be ignored by Rsubread while aligning.&lt;/p&gt;
+&lt;p&gt;For this simulation I created a small .fasta file by pulling some of the sequences from the &lt;strong&gt;Senecavirus A&lt;/strong&gt; genome. I created a fasta file with a few contigs each containing about 70-100 basepairs , and named each contig as read 1, read 2 and so on. And  I also pulled some sequences from the Zika virus which are names as Zika1 and Zika2. I will be aligning my reads to Senecavirus A genome. So, Zika virus reads should not be counted by Rsubread while aligning.&lt;/p&gt;
+
+&lt;p&gt;Sequences extracted:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;gt;read1
 AAGGAAGGACTGGGCATGAGGGCCCAGTCCTTCCTTTCCCCTTCCGGGGGGTAAACCGGCTGTGTTTGCT
@@ -335,9 +337,10 @@ AGTTGTTGATCTGTGTGAATCAGACTGCGACAGTTCGAGTTTGAAGCGAAAGCTAGCAACAGTATCAACA
 AAAGCTAGCAACAGTATCAACAGGTTTTATTTTGGATTTGGAAACGAGAGTTTCTGGTCATGAAAAACCCA
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;This fasta file needs to be changed into &lt;strong&gt;fastq&lt;/strong&gt; format. There are many tools available to convert fasta file to fastq format. I use &lt;strong&gt;reformat.sh&lt;/strong&gt; script which is a part of bbmap. You can find details about bbmap and reformat.sh script elsewhere. The general syntax is as follow:&lt;/p&gt;
+&lt;p&gt;This fasta file needs to be changed into &lt;strong&gt;fastq&lt;/strong&gt; format. There are many tools available to convert fasta file to fastq format. I used &lt;strong&gt;reformat.sh&lt;/strong&gt; script which is a part of &lt;strong&gt;bbmap&lt;/strong&gt;. You can find details about bbmap and reformat.sh script elsewhere. The general syntax is as follow:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;./reformat.sh in= meta.fasta out=meta.fastq qfake=35
+
 #meta.fasta is my input file, meta.fastq is the output file and we are assigning quality score of 34 to all the basepairs.
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -345,6 +348,7 @@ AAAGCTAGCAACAGTATCAACAGGTTTTATTTTGGATTTGGAAACGAGAGTTTCTGGTCATGAAAAACCCA
 
 &lt;pre&gt;&lt;code&gt;#syntax
 buildindex(basename=&amp;quot;reference_index&amp;quot;,reference=ref)
+
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;In my case it would be&lt;/p&gt;
@@ -352,14 +356,14 @@ buildindex(basename=&amp;quot;reference_index&amp;quot;,reference=ref)
 &lt;pre&gt;&lt;code&gt;buildindex(basename= “seneca”, reference= “sva.fasta”)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Now, I can align your reads with the index which I  created above.&lt;/p&gt;
+&lt;p&gt;Now, I can align reads in &lt;strong&gt;meta.fastq&lt;/strong&gt; to the index file which I  created above.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;align(index=&amp;quot;seneca&amp;quot;,readfile1=”meta.fastq”,output_file=&amp;quot;alignResults.BAM&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;I saw that all the reads that were in meta.fastq belonging to Senecavirus A were aligned while , all the Zika virus reads were ignored.The output will be in .BAM format.&lt;/p&gt;
 
-&lt;p&gt;Now the tricky part. We need a annotated file in GTF or GFF format to count the features or genes aligned. For viruses usually you don&amp;rsquo;t file well-annotated files. Rsubread package allows you to create a such file in tabular format which they call it SAF format.&lt;/p&gt;
+&lt;p&gt;Now the tricky part. We need a annotated file in GTF or GFF format to count the features or genes aligned. For viruses, in most of the cases you don&amp;rsquo;t find well-annotated GTF or GFF files. Rsubread package allows you to create  such files in tabular format which they call it SAF format.&lt;/p&gt;
 
 &lt;p&gt;So, lets use follwing code to create one SAF file for this analysis.&lt;/p&gt;
 
@@ -380,7 +384,7 @@ stringsAsFactors=FALSE)
 4  gene2 KX778101.1  5000 5500      -
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Here you have to use Genebank accession number of virus genome as Chr. Beacuse .BAM file that we created by aligning whill have accession number liked to each reads. Other parameters can be changed.&lt;/p&gt;
+&lt;p&gt;Here you have to use Genebank accession number of virus genome as Chr. Beacuse .BAM file that we created by aligning to Senecavirus A genome have accession number liked to each reads. Other parameters can be changed.&lt;/p&gt;
 
 &lt;p&gt;Now, final step is to count reads.&lt;/p&gt;
 
@@ -388,9 +392,9 @@ stringsAsFactors=FALSE)
 fc_SE
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;You can see how many features were counted on the basis of information you provided in SAF table.&lt;/p&gt;
+&lt;p&gt;You can see how many features were counted on the basis of information you provided in SAF table. You will see all the sequences that we extracted from the Senecavirus A genome have been been counted while there will not be any counts for Zika virus sequences.&lt;/p&gt;
 
-&lt;p&gt;Hope this will help you to understand how Rsubread package works. I had to struggle to create SAF file, but I got help from Biostar.&lt;/p&gt;
+&lt;p&gt;Hope this will help you to understand how Rsubread package works. If you have any confusion about using Rsubread package, they have very good documentation on Bioconductor.&lt;/p&gt;
 </description>
     </item>
     
@@ -416,7 +420,7 @@ fc_SE
 
 &lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
 
-&lt;p&gt;You can use this package to design 3&amp;rsquo; and 5&amp;rsquo;primers for Race PCR. The design is based on as described by Clonetech Race PCR manual. The resulting primers will have vector sequence automatically added to them. Source code is available at my &lt;a href=&#34;https://github.com/lrjoshi/RacepcR&#34; target=&#34;_blank&#34;&gt;Github page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can use this package to design 3&amp;rsquo; and 5&amp;rsquo;primers for Race PCR. The design is based on the method described by Clonetech Race PCR manual. The resulting primers will have vector sequence automatically added to them. Source code is available on my &lt;a href=&#34;https://github.com/lrjoshi/RacepcR&#34; target=&#34;_blank&#34;&gt;Github page&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
 

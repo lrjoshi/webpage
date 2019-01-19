@@ -17,7 +17,7 @@
       
     
   
-  <meta name="description" content="RNA-Seq data analysis can be complicated. Softwares with graphical user interface like CLC Workbench have made RNA-Seq data analysis quite easier but often we don&rsquo;t know how the algorithm is working especially if you are from biology background like me. I decided to run a small simulation to understand how this works.It is amazing how a single R package can do things like read aligning and read counts in a few lines of codes.">
+  <meta name="description" content="RNA-Seq data analysis can be complicated. Softwares with graphical user interface like CLC Workbench, have made RNA-Seq data analysis quite easier.However, they are expensive and in most of the cases you might not be able to tweak your analysis in the exact way you want. Another important aspect of learning RNA-Seq analysis is understanding the algorithms behind the analysis.To this end, I decided to run a small simulation to understand how RNA-Seq analysis algorithms work.">
 
   
   <link rel="alternate" hreflang="en-us" href="/2018/05/20/rna-seq-data-analysis-in-r/">
@@ -93,7 +93,7 @@
   <meta property="og:site_name" content="Lok Raj Joshi">
   <meta property="og:url" content="/2018/05/20/rna-seq-data-analysis-in-r/">
   <meta property="og:title" content="RNA-Seq Data Analysis in R | Lok Raj Joshi">
-  <meta property="og:description" content="RNA-Seq data analysis can be complicated. Softwares with graphical user interface like CLC Workbench have made RNA-Seq data analysis quite easier but often we don&rsquo;t know how the algorithm is working especially if you are from biology background like me. I decided to run a small simulation to understand how this works.It is amazing how a single R package can do things like read aligning and read counts in a few lines of codes.">
+  <meta property="og:description" content="RNA-Seq data analysis can be complicated. Softwares with graphical user interface like CLC Workbench, have made RNA-Seq data analysis quite easier.However, they are expensive and in most of the cases you might not be able to tweak your analysis in the exact way you want. Another important aspect of learning RNA-Seq analysis is understanding the algorithms behind the analysis.To this end, I decided to run a small simulation to understand how RNA-Seq analysis algorithms work.">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2018-05-20T00:00:00-05:00">
@@ -284,7 +284,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    3 min read
+    4 min read
   </span>
   
 
@@ -341,7 +341,7 @@
 
 
     <div class="article-style" itemprop="articleBody">
-      <p>RNA-Seq data analysis can be complicated. Softwares with graphical user interface like CLC Workbench have made RNA-Seq data analysis quite easier but often we don&rsquo;t know how the algorithm is working especially if you are from biology background like me. I decided to run a small simulation to understand how this works.It is amazing how a single R package can do things like read aligning and read counts in a few lines of codes.</p>
+      <p>RNA-Seq data analysis can be complicated. Softwares with graphical user interface like CLC Workbench, have made RNA-Seq data analysis quite easier.However, they are expensive and in most of the cases you might not be able to tweak your analysis in the exact way you want. Another important aspect of learning RNA-Seq analysis is understanding the algorithms behind the analysis.To this end, I decided to run a small simulation to understand how RNA-Seq analysis algorithms work.It is amazing how a single R package can do things like read aligning, read mapping and read counts in few lines of codes.</p>
 
 <p>Install Rsubread package in R.</p>
 
@@ -355,7 +355,9 @@ biocLite(&quot;Rsubread&quot;)
 <pre><code>library (Rsubread)
 </code></pre>
 
-<p>Actually for this simulation I created a small .fasta file pulling some of the sequences from the <strong>Senecavirus A</strong> genome. I created a fasta file with few contigs each containing about 70-100 basepairs , and named each contig as read 1, read 2 and so on.And I pulled some sequences from the Zika virus. I will be aligning my reads using Senecavirus genome as a reference. So, Zika virus reads should be ignored by Rsubread while aligning.</p>
+<p>For this simulation I created a small .fasta file by pulling some of the sequences from the <strong>Senecavirus A</strong> genome. I created a fasta file with a few contigs each containing about 70-100 basepairs , and named each contig as read 1, read 2 and so on. And  I also pulled some sequences from the Zika virus which are names as Zika1 and Zika2. I will be aligning my reads to Senecavirus A genome. So, Zika virus reads should not be counted by Rsubread while aligning.</p>
+
+<p>Sequences extracted:</p>
 
 <pre><code>&gt;read1
 AAGGAAGGACTGGGCATGAGGGCCCAGTCCTTCCTTTCCCCTTCCGGGGGGTAAACCGGCTGTGTTTGCT
@@ -391,9 +393,10 @@ AGTTGTTGATCTGTGTGAATCAGACTGCGACAGTTCGAGTTTGAAGCGAAAGCTAGCAACAGTATCAACA
 AAAGCTAGCAACAGTATCAACAGGTTTTATTTTGGATTTGGAAACGAGAGTTTCTGGTCATGAAAAACCCA
 </code></pre>
 
-<p>This fasta file needs to be changed into <strong>fastq</strong> format. There are many tools available to convert fasta file to fastq format. I use <strong>reformat.sh</strong> script which is a part of bbmap. You can find details about bbmap and reformat.sh script elsewhere. The general syntax is as follow:</p>
+<p>This fasta file needs to be changed into <strong>fastq</strong> format. There are many tools available to convert fasta file to fastq format. I used <strong>reformat.sh</strong> script which is a part of <strong>bbmap</strong>. You can find details about bbmap and reformat.sh script elsewhere. The general syntax is as follow:</p>
 
 <pre><code>./reformat.sh in= meta.fasta out=meta.fastq qfake=35
+
 #meta.fasta is my input file, meta.fastq is the output file and we are assigning quality score of 34 to all the basepairs.
 </code></pre>
 
@@ -401,6 +404,7 @@ AAAGCTAGCAACAGTATCAACAGGTTTTATTTTGGATTTGGAAACGAGAGTTTCTGGTCATGAAAAACCCA
 
 <pre><code>#syntax
 buildindex(basename=&quot;reference_index&quot;,reference=ref)
+
 </code></pre>
 
 <p>In my case it would be</p>
@@ -408,14 +412,14 @@ buildindex(basename=&quot;reference_index&quot;,reference=ref)
 <pre><code>buildindex(basename= “seneca”, reference= “sva.fasta”)
 </code></pre>
 
-<p>Now, I can align your reads with the index which I  created above.</p>
+<p>Now, I can align reads in <strong>meta.fastq</strong> to the index file which I  created above.</p>
 
 <pre><code>align(index=&quot;seneca&quot;,readfile1=”meta.fastq”,output_file=&quot;alignResults.BAM&quot;)
 </code></pre>
 
 <p>I saw that all the reads that were in meta.fastq belonging to Senecavirus A were aligned while , all the Zika virus reads were ignored.The output will be in .BAM format.</p>
 
-<p>Now the tricky part. We need a annotated file in GTF or GFF format to count the features or genes aligned. For viruses usually you don&rsquo;t file well-annotated files. Rsubread package allows you to create a such file in tabular format which they call it SAF format.</p>
+<p>Now the tricky part. We need a annotated file in GTF or GFF format to count the features or genes aligned. For viruses, in most of the cases you don&rsquo;t find well-annotated GTF or GFF files. Rsubread package allows you to create  such files in tabular format which they call it SAF format.</p>
 
 <p>So, lets use follwing code to create one SAF file for this analysis.</p>
 
@@ -436,7 +440,7 @@ stringsAsFactors=FALSE)
 4  gene2 KX778101.1  5000 5500      -
 </code></pre>
 
-<p>Here you have to use Genebank accession number of virus genome as Chr. Beacuse .BAM file that we created by aligning whill have accession number liked to each reads. Other parameters can be changed.</p>
+<p>Here you have to use Genebank accession number of virus genome as Chr. Beacuse .BAM file that we created by aligning to Senecavirus A genome have accession number liked to each reads. Other parameters can be changed.</p>
 
 <p>Now, final step is to count reads.</p>
 
@@ -444,9 +448,9 @@ stringsAsFactors=FALSE)
 fc_SE
 </code></pre>
 
-<p>You can see how many features were counted on the basis of information you provided in SAF table.</p>
+<p>You can see how many features were counted on the basis of information you provided in SAF table. You will see all the sequences that we extracted from the Senecavirus A genome have been been counted while there will not be any counts for Zika virus sequences.</p>
 
-<p>Hope this will help you to understand how Rsubread package works. I had to struggle to create SAF file, but I got help from Biostar.</p>
+<p>Hope this will help you to understand how Rsubread package works. If you have any confusion about using Rsubread package, they have very good documentation on Bioconductor.</p>
 
     </div>
 

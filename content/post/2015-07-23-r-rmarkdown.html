@@ -8,8 +8,8 @@ tags: ["R"]
 
 
 
-<p>This week I did some virus neutralization test. I wanted to show the results exactly I saw in 96-well plate. I was looking if there is any package in R that can actually do this. Actually there is one (or might be more). I found a package called <strong>platetools</strong> that can plot values in plates.</p>
-<p>I wan’t to show how I did it.</p>
+<p>This week I did some virus neutralization test and I was wondering if there is any way to show the results in 96-well plate format. I was trying to find if there is any R package that can do this. Actually there is one (or might be more). I found a package called <strong>platetools</strong> that can plot values in plate format.</p>
+<p>Let’s see how I used this package.</p>
 <div id="r-markdown" class="section level1">
 <h1>R Markdown</h1>
 <p>First load all the required packages</p>
@@ -123,8 +123,7 @@ data
 z_grid(data = data$vals,
        well = data$well,
        plate_id = plate_id) +
-  ggtitle(&quot;Virus Neutralization Test&quot;)
-## Warning: package &#39;bindrcpp&#39; was built under R version 3.4.4</code></pre>
+  ggtitle(&quot;Virus Neutralization Test&quot;)</code></pre>
 <p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
-<p>Here, the label is not useful because I am interested only in positive and negative. But can be useful in plotting ELISA plates.</p>
+<p>Here, the label is not useful for me because I am interested only in positive and negative wells. But it can be useful in plotting ELISA plates.</p>
 </div>

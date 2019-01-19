@@ -35,7 +35,7 @@ Go to the github repository link where you have the CSV file
       <guid>/2018/09/01/shiny-app-for-designing-primers-for-dna-cloning/</guid>
       <description>Cloning is one of the most widely used tool in molecular biology. Cloning primers typically contain target sequence and restriction site as overhang. Designing these primers manually can be time consuming and chances of errors are high. This Shiny app is designed to automate primer designing process for DNA cloning.
 Basically, what this app does is :
-Extracts target sequence from the input DNA. You can choose number of base pairs you want.</description>
+For forward primer, it extracts sequences from 5 primer end. You can choose number of base pairs you want.</description>
     </item>
     
     <item>
@@ -53,8 +53,8 @@ Extracts target sequence from the input DNA. You can choose number of base pairs
       <pubDate>Mon, 23 Jul 2018 21:13:14 -0500</pubDate>
       
       <guid>/2018/07/23/creating-96-well-plates-in-r/</guid>
-      <description>This week I did some virus neutralization test. I wanted to show the results exactly I saw in 96-well plate. I was looking if there is any package in R that can actually do this. Actually there is one (or might be more). I found a package called platetools that can plot values in plates.
-I wan’t to show how I did it.
+      <description>This week I did some virus neutralization test and I was wondering if there is any way to show the results in 96-well plate format. I was trying to find if there is any R package that can do this. Actually there is one (or might be more). I found a package called platetools that can plot values in plate format.
+Let’s see how I used this package.
 R MarkdownFirst load all the required packages</description>
     </item>
     
@@ -64,7 +64,7 @@ R MarkdownFirst load all the required packages</description>
       <pubDate>Sun, 20 May 2018 00:00:00 -0500</pubDate>
       
       <guid>/2018/05/20/rna-seq-data-analysis-in-r/</guid>
-      <description>RNA-Seq data analysis can be complicated. Softwares with graphical user interface like CLC Workbench have made RNA-Seq data analysis quite easier but often we don&amp;rsquo;t know how the algorithm is working especially if you are from biology background like me. I decided to run a small simulation to understand how this works.It is amazing how a single R package can do things like read aligning and read counts in a few lines of codes.</description>
+      <description>RNA-Seq data analysis can be complicated. Softwares with graphical user interface like CLC Workbench, have made RNA-Seq data analysis quite easier.However, they are expensive and in most of the cases you might not be able to tweak your analysis in the exact way you want. Another important aspect of learning RNA-Seq analysis is understanding the algorithms behind the analysis.To this end, I decided to run a small simulation to understand how RNA-Seq analysis algorithms work.</description>
     </item>
     
     <item>
@@ -73,7 +73,7 @@ R MarkdownFirst load all the required packages</description>
       <pubDate>Tue, 20 Mar 2018 00:00:00 -0500</pubDate>
       
       <guid>/2018/03/20/racepcr--r-package-for-designing-primers-for-race-pcr/</guid>
-      <description>Description You can use this package to design 3&amp;rsquo; and 5&amp;rsquo;primers for Race PCR. The design is based on as described by Clonetech Race PCR manual. The resulting primers will have vector sequence automatically added to them. Source code is available at my Github page.
+      <description>Description You can use this package to design 3&amp;rsquo; and 5&amp;rsquo;primers for Race PCR. The design is based on the method described by Clonetech Race PCR manual. The resulting primers will have vector sequence automatically added to them. Source code is available on my Github page.
 Installation  library(devtools)
 install_github(&amp;ldquo;lrjoshi/RacepcR&amp;rdquo;)
  Usage  getDNA(dnaseq) #enter DNA Sequence and check length
@@ -86,7 +86,7 @@ quality (dnaseq) #to see if your sequence contains character other than AGTC.</d
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
       
       <guid>/2016/04/20/working-with-ncbi-sra-files/</guid>
-      <description>Although seems straightforward, working with SRA files can be tricky for newbies. Here I have short description about how to download and work with SRA files.
+      <description>Working with SRA files can be tricky sometimes. Here I have short description about how to download and process SRA files.
 NGS read files can be downloaded using sra-toolkit. First you have to download latest version of sra-toolkit from their website. The file should be in tar.gz format.
 Then untar the file based on the OS you are using.
 Then use the following command to put command line in path</description>

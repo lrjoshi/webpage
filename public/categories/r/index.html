@@ -305,7 +305,7 @@ Go to the github repository link where you have the CSV file</p>
       <p>Cloning is one of the most widely used tool in molecular biology. Cloning primers typically contain target sequence and restriction site as overhang. Designing these primers manually can be time consuming and chances of errors are high. This Shiny app is designed to automate primer designing process for DNA cloning.</p>
 
 <p>Basically, what this app does is :
-Extracts target sequence from the input DNA. You can choose number of base pairs you want.</p>
+For forward primer, it extracts sequences from 5 primer end. You can choose number of base pairs you want.</p>
 
       
     </div>
@@ -322,8 +322,8 @@ Extracts target sequence from the input DNA. You can choose number of base pairs
     <h2><a href="/2018/07/23/creating-96-well-plates-in-r/">Creating 96-Well Plates in R</a></h2>
     <div class="article-style">
       
-      This week I did some virus neutralization test. I wanted to show the results exactly I saw in 96-well plate. I was looking if there is any package in R that can actually do this. Actually there is one (or might be more). I found a package called platetools that can plot values in plates.
-I wan’t to show how I did it.
+      This week I did some virus neutralization test and I was wondering if there is any way to show the results in 96-well plate format. I was trying to find if there is any R package that can do this. Actually there is one (or might be more). I found a package called platetools that can plot values in plate format.
+Let’s see how I used this package.
 R Markdown
 First load all the required packages
       
