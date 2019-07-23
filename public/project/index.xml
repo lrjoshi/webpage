@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 27 May 2018 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 27 May 2018 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Next generation sequencing</title>
       <link>/project/deep-learning/</link>
-      <pubDate>Sun, 27 May 2018 00:00:00 -0500</pubDate>
+      <pubDate>Sun, 27 May 2018 00:00:00 -0400</pubDate>
       
       <guid>/project/deep-learning/</guid>
       <description>We are using Illumina MiSeq for viral genome sequencing.We have sequenced over 40 isolated of Senecavirus A using Illumina Miseq. Often we run viral metagenomic sequencing in clinical samples for disease diagnosis. I have deep interest in viral informatics. In the Posts section of this webpage you can find some of the tools I am learning to develop my bioinformatics skills.</description>
@@ -24,7 +24,7 @@
     <item>
       <title>Senecavirus A Pathogenesis</title>
       <link>/project/sva-pathogenesis/</link>
-      <pubDate>Sun, 27 May 2018 00:00:00 -0500</pubDate>
+      <pubDate>Sun, 27 May 2018 00:00:00 -0400</pubDate>
       
       <guid>/project/sva-pathogenesis/</guid>
       <description>Senecavirus A is a re-emergiging disease of swine. It causes vesicular disease in swine. Despite detection of Senecavirus A nucleic acid in pigs with vesicular disease, attemps to establish causal relationship had failed. We were able to reproduce the disease in swine and we have published a detail pathogenesis of Senecavirus A in this paper. We are still working to understand other aspects of this disease in swine.</description>
@@ -33,7 +33,7 @@
     <item>
       <title>Vectored-vaccine development</title>
       <link>/project/orf-vector/</link>
-      <pubDate>Sun, 27 May 2018 00:00:00 -0500</pubDate>
+      <pubDate>Sun, 27 May 2018 00:00:00 -0400</pubDate>
       
       <guid>/project/orf-vector/</guid>
       <description>We have developed Orf virus, which is parapox virus, as a vaccine delivery platfrom. We are using well-characterized immunomudolatory loci present in the genome of Orf virus to insert heterologous genes to develop receombinant viruses that can be used as a vaccine. We have already shown high level of protection against PEDV using recombinant Orf virus expressing Spike gene of PEDV. This recombinant virus also protects piglets born to our recombinant virus immunized sows (Check paper here).</description>
@@ -42,7 +42,7 @@
     <item>
       <title>Viral Diagnostic Assay Developement</title>
       <link>/project/example-external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 -0500</pubDate>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>/project/example-external-project/</guid>
       <description></description>

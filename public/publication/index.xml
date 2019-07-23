@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 -0600</lastBuildDate>
+    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Detection of Fowlpox virus carrying distinct genome segments of Reticuloendotheliosis virus</title>
       <link>/publication/fowlpox/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 -0600</pubDate>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 -0500</pubDate>
       
       <guid>/publication/fowlpox/</guid>
       <description>Abstract
@@ -29,7 +29,7 @@ Highlights
     <item>
       <title>Pathogenicity and cross-reactive immune responses of a historical and a contemporary Senecavirus A strains in pigs</title>
       <link>/publication/sva-cross-reactive/</link>
-      <pubDate>Wed, 18 Jul 2018 00:00:00 -0500</pubDate>
+      <pubDate>Wed, 18 Jul 2018 00:00:00 -0400</pubDate>
       
       <guid>/publication/sva-cross-reactive/</guid>
       <description>Abstract
@@ -39,7 +39,7 @@ The goals of this study were to compare the pathogenicity and infection dynamics
     <item>
       <title>Passive immunity to porcine epidemic diarrhea virus following immunization of pregnant gilts with a recombinant orf virus vector expressing the spike protein</title>
       <link>/publication/pedv-passive-immunity/</link>
-      <pubDate>Thu, 03 May 2018 00:00:00 -0500</pubDate>
+      <pubDate>Thu, 03 May 2018 00:00:00 -0400</pubDate>
       
       <guid>/publication/pedv-passive-immunity/</guid>
       <description>Abstract
@@ -49,7 +49,7 @@ Passive immunity is critical for protection of neonatal piglets against porcine 
     <item>
       <title>Adaptive immune responses following Senecavirus A infection in pigs</title>
       <link>/publication/sva-adaptive/</link>
-      <pubDate>Thu, 01 Feb 2018 00:00:00 -0600</pubDate>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 -0500</pubDate>
       
       <guid>/publication/sva-adaptive/</guid>
       <description>Abstract
@@ -59,7 +59,7 @@ Senecavirus A (SVA), an emerging picornavirus of swine, causes vesicular disease
     <item>
       <title>Immunogenicity of ORFV-based vectors expressing the rabies virus glycoprotein in livestock species</title>
       <link>/publication/orfv-rabies/</link>
-      <pubDate>Wed, 01 Nov 2017 00:00:00 -0500</pubDate>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 -0400</pubDate>
       
       <guid>/publication/orfv-rabies/</guid>
       <description>Abstract
@@ -69,7 +69,7 @@ The parapoxvirus Orf virus (ORFV) encodes several immunomodulatory proteins (IMP
     <item>
       <title>A novel bovine papillomavirus type in the genus Dyokappapapillomavirus</title>
       <link>/publication/papilloma/</link>
-      <pubDate>Mon, 16 Oct 2017 00:00:00 -0500</pubDate>
+      <pubDate>Mon, 16 Oct 2017 00:00:00 -0400</pubDate>
       
       <guid>/publication/papilloma/</guid>
       <description>Abstract
@@ -79,7 +79,7 @@ Papillomaviruses are a diverse group of viruses that are known to infect a wide 
     <item>
       <title>The S2 glycoprotein subunit of porcine epidemic diarrhea virus contains immunodominant neutralizing epitopes</title>
       <link>/publication/pedv-s2/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 -0500</pubDate>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 -0400</pubDate>
       
       <guid>/publication/pedv-s2/</guid>
       <description>Abstract
@@ -89,7 +89,7 @@ The porcine epidemic diarrhea virus (PEDV) spike (S) protein is the major target
     <item>
       <title>Genetic characterization and phylogenetic analysis of senecavirus A circulating in the US and in Brazil.</title>
       <link>/publication/sva-brazil/</link>
-      <pubDate>Sun, 25 Dec 2016 00:00:00 -0600</pubDate>
+      <pubDate>Sun, 25 Dec 2016 00:00:00 -0500</pubDate>
       
       <guid>/publication/sva-brazil/</guid>
       <description></description>
@@ -98,7 +98,7 @@ The porcine epidemic diarrhea virus (PEDV) spike (S) protein is the major target
     <item>
       <title>Neonatal pig mortality associated with senecavirus A.</title>
       <link>/publication/sva-embraba/</link>
-      <pubDate>Sun, 25 Dec 2016 00:00:00 -0600</pubDate>
+      <pubDate>Sun, 25 Dec 2016 00:00:00 -0500</pubDate>
       
       <guid>/publication/sva-embraba/</guid>
       <description>Abstract
@@ -108,7 +108,7 @@ Senecavirus A (SVA) is an emerging picornavirus that has been associated with ou
     <item>
       <title>Pathogenesis of Senecavirus A in finishing pigs</title>
       <link>/publication/sva-pathogenesis/</link>
-      <pubDate>Fri, 16 Dec 2016 00:00:00 -0600</pubDate>
+      <pubDate>Fri, 16 Dec 2016 00:00:00 -0500</pubDate>
       
       <guid>/publication/sva-pathogenesis/</guid>
       <description>Abstract
@@ -118,7 +118,7 @@ Senecavirus A (SVA) is an emerging picornavirus that has been associated with ve
     <item>
       <title>Immunogenicity of a Recombinant Parapoxvirus Expressing the Spike Protein of Porcine Epidemic Diarrhea Virus.</title>
       <link>/publication/orfv-pedv/</link>
-      <pubDate>Mon, 01 Aug 2016 00:00:00 -0500</pubDate>
+      <pubDate>Mon, 01 Aug 2016 00:00:00 -0400</pubDate>
       
       <guid>/publication/orfv-pedv/</guid>
       <description>Abstract
@@ -128,7 +128,7 @@ The parapoxvirus Orf virus (ORFV), has long been recognized for its immunomodula
     <item>
       <title>Detection of the emerging picornavirus Senecavirus A in pigs, mice, and houseflies</title>
       <link>/publication/sva-genomic/</link>
-      <pubDate>Wed, 01 Jun 2016 00:00:00 -0500</pubDate>
+      <pubDate>Wed, 01 Jun 2016 00:00:00 -0400</pubDate>
       
       <guid>/publication/sva-genomic/</guid>
       <description>Abstract
@@ -138,7 +138,7 @@ Senecavirus A (SVA) is an emerging picornavirus that has been recently associate
     <item>
       <title>Senecavirus A: A Newly Emerging Picornavirus of Swine</title>
       <link>/publication/sva-editorial/</link>
-      <pubDate>Tue, 01 Dec 2015 00:00:00 -0600</pubDate>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 -0500</pubDate>
       
       <guid>/publication/sva-editorial/</guid>
       <description></description>
@@ -147,7 +147,7 @@ Senecavirus A (SVA) is an emerging picornavirus that has been recently associate
     <item>
       <title>Prevalence of Vancomycin Resistant Enterococci Species in Minced Buffalo Meat of Chitwan, Nepal</title>
       <link>/publication/vrsa/</link>
-      <pubDate>Thu, 25 Dec 2014 00:00:00 -0600</pubDate>
+      <pubDate>Thu, 25 Dec 2014 00:00:00 -0500</pubDate>
       
       <guid>/publication/vrsa/</guid>
       <description>Abstract
@@ -157,7 +157,7 @@ Methicillin-resistant Staphylococcus aureus (MRSA) has emerged as a significant 
     <item>
       <title>Prevalence of methicillin-resistant Staphylococcus aureus (MRSA) in dairy farms of Pokhara, Nepal.</title>
       <link>/publication/mrsa-milk/</link>
-      <pubDate>Tue, 16 Dec 2014 00:00:00 -0600</pubDate>
+      <pubDate>Tue, 16 Dec 2014 00:00:00 -0500</pubDate>
       
       <guid>/publication/mrsa-milk/</guid>
       <description>Abstract
@@ -167,7 +167,7 @@ MRSA (Methicillin-resistant Staphylococcus aureus) are the strains of S. aureus 
     <item>
       <title>Methicillin-Resistant Staphylococcus Aureus (MRSA) in Cattle: Epidemiology and Zoonotic Implications</title>
       <link>/publication/mrsa-review/</link>
-      <pubDate>Tue, 25 Mar 2014 00:00:00 -0500</pubDate>
+      <pubDate>Tue, 25 Mar 2014 00:00:00 -0400</pubDate>
       
       <guid>/publication/mrsa-review/</guid>
       <description>Abstract
@@ -177,7 +177,7 @@ Methicillin-resistant Staphylococcus aureus (MRSA) has emerged as a significant 
     <item>
       <title>Study on the prevalence of Cryptosporidium in calves and HIV infected humans in the periphery of river basins of Kathmandu valley</title>
       <link>/publication/crypto/</link>
-      <pubDate>Mon, 16 Dec 2013 00:00:00 -0600</pubDate>
+      <pubDate>Mon, 16 Dec 2013 00:00:00 -0500</pubDate>
       
       <guid>/publication/crypto/</guid>
       <description>Abstract

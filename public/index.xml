@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
@@ -57,7 +57,7 @@ head(mydata)&lt;/code&gt;&lt;/pre&gt;
     <item>
       <title>Detection of Fowlpox virus carrying distinct genome segments of Reticuloendotheliosis virus</title>
       <link>/publication/fowlpox/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 -0600</pubDate>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 -0500</pubDate>
       
       <guid>/publication/fowlpox/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
@@ -240,7 +240,7 @@ z_grid(data = data$vals,
     <item>
       <title>Pathogenicity and cross-reactive immune responses of a historical and a contemporary Senecavirus A strains in pigs</title>
       <link>/publication/sva-cross-reactive/</link>
-      <pubDate>Wed, 18 Jul 2018 00:00:00 -0500</pubDate>
+      <pubDate>Wed, 18 Jul 2018 00:00:00 -0400</pubDate>
       
       <guid>/publication/sva-cross-reactive/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
@@ -252,7 +252,7 @@ z_grid(data = data$vals,
     <item>
       <title>Next generation sequencing</title>
       <link>/project/deep-learning/</link>
-      <pubDate>Sun, 27 May 2018 00:00:00 -0500</pubDate>
+      <pubDate>Sun, 27 May 2018 00:00:00 -0400</pubDate>
       
       <guid>/project/deep-learning/</guid>
       <description>&lt;p&gt;We are using Illumina MiSeq for viral genome sequencing.We have sequenced over 40 isolated of Senecavirus A using Illumina Miseq. Often we run viral metagenomic sequencing in &lt;a href=&#34;https://lokfiles.netlify.com/papilloma.pdf&#34; target=&#34;_blank&#34;&gt;clinical samples for disease diagnosis&lt;/a&gt;. I have deep interest in viral informatics. In the &lt;strong&gt;Posts&lt;/strong&gt; section of this webpage you can find some of the tools I am learning to develop my bioinformatics skills.&lt;/p&gt;
@@ -262,7 +262,7 @@ z_grid(data = data$vals,
     <item>
       <title>Senecavirus A Pathogenesis</title>
       <link>/project/sva-pathogenesis/</link>
-      <pubDate>Sun, 27 May 2018 00:00:00 -0500</pubDate>
+      <pubDate>Sun, 27 May 2018 00:00:00 -0400</pubDate>
       
       <guid>/project/sva-pathogenesis/</guid>
       <description>&lt;p&gt;Senecavirus A is a re-emergiging disease of swine. It causes vesicular disease in swine. Despite detection of Senecavirus A nucleic acid in pigs with vesicular disease, attemps to establish causal relationship had failed. We were able to reproduce the disease in swine and we have published a detail pathogenesis of Senecavirus A &lt;a href=&#34;http://lokfiles.netlify.com/sva-pathogenesis.pdf&#34; target=&#34;_blank&#34;&gt;in this paper&lt;/a&gt;. We are still working to understand other aspects of this disease in swine.&lt;/p&gt;
@@ -272,7 +272,7 @@ z_grid(data = data$vals,
     <item>
       <title>Vectored-vaccine development</title>
       <link>/project/orf-vector/</link>
-      <pubDate>Sun, 27 May 2018 00:00:00 -0500</pubDate>
+      <pubDate>Sun, 27 May 2018 00:00:00 -0400</pubDate>
       
       <guid>/project/orf-vector/</guid>
       <description>&lt;p&gt;We have developed Orf virus, which is parapox virus, as a vaccine delivery platfrom. We are using well-characterized immunomudolatory loci present in the genome of Orf virus to insert heterologous genes to develop receombinant viruses that can be used as a vaccine. We have already shown high level of protection against PEDV using &lt;a href=&#34;https://lokfiles.netlify.com/orfv-pedv.pdf&#34; target=&#34;_blank&#34;&gt;recombinant Orf virus expressing Spike gene of PEDV&lt;/a&gt;. This recombinant virus also protects piglets born to our recombinant virus immunized sows &lt;a href=&#34;https://lokfiles.netlify.com/pedv-passive-immunity.pdf&#34; target=&#34;_blank&#34;&gt;(Check paper here)&lt;/a&gt;. Our goal is to develop Orf virus as a vaccine delivery platform for many other infectious disease of swine and other livestock species.&lt;/p&gt;
@@ -282,7 +282,7 @@ z_grid(data = data$vals,
     <item>
       <title>RNA-Seq Data Analysis in R</title>
       <link>/2018/05/20/rna-seq-data-analysis-in-r/</link>
-      <pubDate>Sun, 20 May 2018 00:00:00 -0500</pubDate>
+      <pubDate>Sun, 20 May 2018 00:00:00 -0400</pubDate>
       
       <guid>/2018/05/20/rna-seq-data-analysis-in-r/</guid>
       <description>&lt;p&gt;RNA-Seq data analysis can be complicated. Softwares with graphical user interface like CLC Workbench, have made RNA-Seq data analysis quite easier.However, they are expensive and in most of the cases you might not be able to tweak your analysis in the exact way you want. Another important aspect of learning RNA-Seq analysis is understanding the algorithms behind the analysis.To this end, I decided to run a small simulation to understand how RNA-Seq analysis algorithms work.It is amazing how a single R package can do things like read aligning, read mapping and read counts in few lines of codes.&lt;/p&gt;
@@ -401,7 +401,7 @@ fc_SE
     <item>
       <title>Passive immunity to porcine epidemic diarrhea virus following immunization of pregnant gilts with a recombinant orf virus vector expressing the spike protein</title>
       <link>/publication/pedv-passive-immunity/</link>
-      <pubDate>Thu, 03 May 2018 00:00:00 -0500</pubDate>
+      <pubDate>Thu, 03 May 2018 00:00:00 -0400</pubDate>
       
       <guid>/publication/pedv-passive-immunity/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
@@ -413,7 +413,7 @@ fc_SE
     <item>
       <title>RacePCR- R package for designing primers for Race PCR</title>
       <link>/2018/03/20/racepcr--r-package-for-designing-primers-for-race-pcr/</link>
-      <pubDate>Tue, 20 Mar 2018 00:00:00 -0500</pubDate>
+      <pubDate>Tue, 20 Mar 2018 00:00:00 -0400</pubDate>
       
       <guid>/2018/03/20/racepcr--r-package-for-designing-primers-for-race-pcr/</guid>
       <description>
@@ -481,7 +481,7 @@ fc_SE
     <item>
       <title>Adaptive immune responses following Senecavirus A infection in pigs</title>
       <link>/publication/sva-adaptive/</link>
-      <pubDate>Thu, 01 Feb 2018 00:00:00 -0600</pubDate>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 -0500</pubDate>
       
       <guid>/publication/sva-adaptive/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
@@ -493,7 +493,7 @@ fc_SE
     <item>
       <title>Immunogenicity of ORFV-based vectors expressing the rabies virus glycoprotein in livestock species</title>
       <link>/publication/orfv-rabies/</link>
-      <pubDate>Wed, 01 Nov 2017 00:00:00 -0500</pubDate>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 -0400</pubDate>
       
       <guid>/publication/orfv-rabies/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
@@ -505,7 +505,7 @@ fc_SE
     <item>
       <title>A novel bovine papillomavirus type in the genus Dyokappapapillomavirus</title>
       <link>/publication/papilloma/</link>
-      <pubDate>Mon, 16 Oct 2017 00:00:00 -0500</pubDate>
+      <pubDate>Mon, 16 Oct 2017 00:00:00 -0400</pubDate>
       
       <guid>/publication/papilloma/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
