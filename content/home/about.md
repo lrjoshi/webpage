@@ -19,9 +19,9 @@ weight = 5
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD in Biological and Biomedical Science"
+  course = "PhD in Biomedical & Biological Sciences"
   institution = "Cornell University"
-  year = "--ongoing"
+  year = "(ongoing)"
 
 [[education.courses]]
   course = "MS Biological Science (Molecular Virology)"
