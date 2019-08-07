@@ -19,12 +19,12 @@ weight = 5
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD in Veterinary Microbiology"
-  institution = "South Dakota State University"
+  course = "PhD in Biological and Biomedical Science"
+  institution = "Cornell University"
   year = "--ongoing"
 
 [[education.courses]]
-  course = "MS Biological Science (Virology)"
+  course = "MS Biological Science (Molecular Virology)"
   institution = "South Dakota State Univeristy"
   year = 2017
 
@@ -37,6 +37,6 @@ weight = 5
 
 # Biography
 ***
-I am Lok Raj Joshi, PhD student at [Dr. Diel's Lab](https://www.sdstate.edu/directory/diego-diel), Department of Veterinary and Biomedical Sciecne, SDSU. I am working on viral pathogensis,viral diagnostic assay and vectored-vaccine developement.
+I am Lok Raj Joshi, PhD student at [Dr. Diel's Lab](https://www.diellab.net), Department of Population Medicine and Diagnostic Science, Cornell University. I am working on virus pathogensis,viral diagnostic assay and vectored-vaccine developement.
 I have deep  interest in next-generation sequencing and genomic data analysis. I use R and Linux command line tools for genomic data analysis.  
 ***

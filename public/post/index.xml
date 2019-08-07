@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 09 Jan 2019 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 05 Aug 2019 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Working with the genome of non-model organism in R Bioconductor</title>
+      <link>/2019/08/05/working-with-the-genome-of-non-model-organism-in-r-bioconductor/</link>
+      <pubDate>Mon, 05 Aug 2019 21:13:14 -0500</pubDate>
+      
+      <guid>/2019/08/05/working-with-the-genome-of-non-model-organism-in-r-bioconductor/</guid>
+      <description>GenomicFeatures and BSgenome are two widely used packages for genomic data analysis in R Bioconductor. They have variety of functions to work with genome features. Unfortunately, there are only a limited species you can work with BSgenome. But, you can create Genome Features and BSgenome for your organism of choice if it is not packaged into BSgenome by default.
+First let’s create a taxonomic database using GenomicFeatures package. I am using Orf virus as an example here .</description>
+    </item>
     
     <item>
       <title>Download CSV into R Studio from Github</title>

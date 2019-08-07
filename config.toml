@@ -59,12 +59,12 @@ enableGitInfo = false
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "South Dakota State University", url = "" } ]
+  organizations = [ { name = "Cornell University", url = "" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "lokraj.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  email = "lok.joshi@sdstate.edu"
-  address = "Address: Diel's Lab, Animal Disase Research and Diagnostic Lab, SDSU"
+  email = "lrj36@cornell.edu"
+  address = "Address: Cornell University,Baker Institute, 235 Hungerford Hill Road, Ithaca, NY"
   office_hours = ""
   phone = ""
   skype = ""

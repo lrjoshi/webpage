@@ -13,7 +13,7 @@ weight : 58
 library (ggplot2)
 library(plotly)
 Year= c(2015,2016,2017,2018,2019)
-Citations =c(4,6,32,46,1)
+Citations =c(4,6,32,46,47)
 
 data= data.frame(Year, Citations)
 
@@ -25,8 +25,10 @@ ggplotly(p)
 ```
 
 
-#Awards
+### Awards
+
 ***
+
 >Diversity Schlorship from R Studio to attend rstusio::conf(2019)
 
 >SDSU Sigma XI Best PhD Paper Award (2018)
@@ -44,3 +46,5 @@ ggplotly(p)
 >Merit Scholarship (2008-2013), Tribhuvan University Nepal
 
 >First Award on Essay Competition (2006), NIST College, Nepal
+
+***

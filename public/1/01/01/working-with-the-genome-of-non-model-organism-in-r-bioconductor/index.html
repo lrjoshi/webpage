@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.37.1" />
+  <meta name="author" content="Lok Raj Joshi">
+
+  
+  
+  
+  
+    
+      
+    
+  
+  <meta name="description" content="GenomicFeatures and BSgenome are two widely used packages for genomic data analysis in R Bioconductor. They have variety of functions to work with genome features. Unfortunately, there are only a limited species you can work with BSgenome. But, you can create Genome Features and BSgenome for your organism of choice if it is not packaged into BSgenome by default.
+First let’s create a taxonomic database using GenomicFeatures package. I am using Orf virus as an example here .">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/1/01/01/working-with-the-genome-of-non-model-organism-in-r-bioconductor/">
+
+  
+
+
+  
+
+  
+  
+  <meta name="theme-color" content="#0095eb">
+  
+  
+  
+  
+    
+  
+  
+    
+    
+      
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+      
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-29406530-3', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Lok Raj Joshi">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Lok Raj Joshi">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/1/01/01/working-with-the-genome-of-non-model-organism-in-r-bioconductor/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@lokraj">
+  <meta property="twitter:creator" content="@lokraj">
+  
+  <meta property="og:site_name" content="Lok Raj Joshi">
+  <meta property="og:url" content="/1/01/01/working-with-the-genome-of-non-model-organism-in-r-bioconductor/">
+  <meta property="og:title" content="Working with the genome of non-model organism in R Bioconductor | Lok Raj Joshi">
+  <meta property="og:description" content="GenomicFeatures and BSgenome are two widely used packages for genomic data analysis in R Bioconductor. They have variety of functions to work with genome features. Unfortunately, there are only a limited species you can work with BSgenome. But, you can create Genome Features and BSgenome for your organism of choice if it is not packaged into BSgenome by default.
+First let’s create a taxonomic database using GenomicFeatures package. I am using Orf virus as an example here .">
+  <meta property="og:locale" content="en-us">
+  
+  
+  
+  
+
+  
+  
+
+  <title>Working with the genome of non-model organism in R Bioconductor | Lok Raj Joshi</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/">Lok Raj Joshi</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#publications">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#Impact">
+            
+            <span>Impact/Awards</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="article-container">
+    <h1 itemprop="name">Working with the genome of non-model organism in R Bioconductor</h1>
+
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="0001-01-01 00:00:00 &#43;0000 UTC" itemprop="datePublished dateModified">
+      Jan 1, 0001
+    </time>
+  </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Lok Raj Joshi">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    7 min read
+  </span>
+  
+
+  
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fa fa-folder"></i>
+    
+    <a href="/categories/r/">R</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Working%20with%20the%20genome%20of%20non-model%20organism%20in%20R%20Bioconductor&amp;url=%2f1%2f01%2f01%2fworking-with-the-genome-of-non-model-organism-in-r-bioconductor%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2f1%2f01%2f01%2fworking-with-the-genome-of-non-model-organism-in-r-bioconductor%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2f1%2f01%2f01%2fworking-with-the-genome-of-non-model-organism-in-r-bioconductor%2f&amp;title=Working%20with%20the%20genome%20of%20non-model%20organism%20in%20R%20Bioconductor"
+         target="_blank" rel="noopener">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2f1%2f01%2f01%2fworking-with-the-genome-of-non-model-organism-in-r-bioconductor%2f&amp;title=Working%20with%20the%20genome%20of%20non-model%20organism%20in%20R%20Bioconductor"
+         target="_blank" rel="noopener">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Working%20with%20the%20genome%20of%20non-model%20organism%20in%20R%20Bioconductor&amp;body=%2f1%2f01%2f01%2fworking-with-the-genome-of-non-model-organism-in-r-bioconductor%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+    <div class="article-style" itemprop="articleBody">
+      <p>GenomicFeatures and BSgenome are two widely used packages for genomic data analysis in R Bioconductor. They have variety of functions to work with genome features. Unfortunately, there are only a limited species you can work with BSgenome. But, you can create Genome Features and BSgenome for your organism of choice if it is not packaged into BSgenome by default.</p>
+<p>First let’s create a taxonomic database using GenomicFeatures package. I am using <a href="https://www.ncbi.nlm.nih.gov/nuccore/AY386263.1">Orf virus</a> as an example here .</p>
+<p>First, download GFF3 file of the Orf virus from the Genebank. For some reason the GFF3 file downloaded from Genebank has to be modified using some awk commands. You can find the script <a href="https://www.biostars.org/p/382165/">here</a>. I want to acknowlege <a href="https://www.biostars.org/u/33094/">SMK</a> for this solution.</p>
+<p>After you convert your GFF3 file into new GFF3 format and save it as orf.gff3. Then it is pretty straightforward to create taxonomic database.</p>
+<pre class="r"><code>library (GenomicFeatures)
+orf &lt;- orf &lt;- GenomicFeatures::makeTxDbFromGFF(&quot;orf.gff3&quot;,format=&quot;auto&quot;)
+orf</code></pre>
+<pre><code>## TxDb object:
+## # Db type: TxDb
+## # Supporting package: GenomicFeatures
+## # Data source: orf.gff3
+## # Organism: NA
+## # Taxonomy ID: NA
+## # miRBase build ID: NA
+## # Genome: NA
+## # transcript_nrow: 130
+## # exon_nrow: 130
+## # cds_nrow: 130
+## # Db created by: GenomicFeatures package from Bioconductor
+## # Creation time: 2019-08-06 20:41:54 -0400 (Tue, 06 Aug 2019)
+## # GenomicFeatures version at creation time: 1.32.2
+## # RSQLite version at creation time: 2.1.1
+## # DBSCHEMAVERSION: 1.2</code></pre>
+<p>Then you have to save this database,so that you can call it in future without recreating it again. We will use <code>saveDb()</code> to save database and <code>loadDb</code> to load the database. We can use <code>AnnotationDbi</code> package fot this purpose. You will see a new file as <code>orf</code> in the working directory.</p>
+<pre class="r"><code>library (AnnotationDbi)
+saveDb(orf,&quot;orf&quot;)</code></pre>
+<pre><code>## TxDb object:
+## # Db type: TxDb
+## # Supporting package: GenomicFeatures
+## # Data source: orf.gff3
+## # Organism: NA
+## # Taxonomy ID: NA
+## # miRBase build ID: NA
+## # Genome: NA
+## # transcript_nrow: 130
+## # exon_nrow: 130
+## # cds_nrow: 130
+## # Db created by: GenomicFeatures package from Bioconductor
+## # Creation time: 2019-08-06 20:41:54 -0400 (Tue, 06 Aug 2019)
+## # GenomicFeatures version at creation time: 1.32.2
+## # RSQLite version at creation time: 2.1.1
+## # DBSCHEMAVERSION: 1.2</code></pre>
+<p>As you can see we just created a taxonomic database for Orf virus. There are 130 CDS that have been extracted and you can use other functions as shown below.</p>
+<p>First load the database and then try different funtions.</p>
+<pre class="r"><code>library (AnnotationDbi)
+orf &lt;- loadDb(file=&quot;orf&quot;)
+#now check column names
+columns(orf)</code></pre>
+<pre><code>##  [1] &quot;CDSCHROM&quot;   &quot;CDSEND&quot;     &quot;CDSID&quot;      &quot;CDSNAME&quot;    &quot;CDSPHASE&quot;  
+##  [6] &quot;CDSSTART&quot;   &quot;CDSSTRAND&quot;  &quot;EXONCHROM&quot;  &quot;EXONEND&quot;    &quot;EXONID&quot;    
+## [11] &quot;EXONNAME&quot;   &quot;EXONRANK&quot;   &quot;EXONSTART&quot;  &quot;EXONSTRAND&quot; &quot;GENEID&quot;    
+## [16] &quot;TXCHROM&quot;    &quot;TXEND&quot;      &quot;TXID&quot;       &quot;TXNAME&quot;     &quot;TXSTART&quot;   
+## [21] &quot;TXSTRAND&quot;   &quot;TXTYPE&quot;</code></pre>
+<pre class="r"><code>#extract genes
+genes &lt;- genes(orf,&quot;GENEID&quot;)
+head(genes)</code></pre>
+<pre><code>## GRanges object with 6 ranges and 1 metadata column:
+##                seqnames    ranges strand |          GENEID
+##                   &lt;Rle&gt; &lt;IRanges&gt;  &lt;Rle&gt; | &lt;CharacterList&gt;
+##   AAR98099.1 AY386263.1 2409-2858      - |      AAR98099.1
+##   AAR98100.1 AY386263.1 3002-3355      - |      AAR98100.1
+##   AAR98101.1 AY386263.1 3713-3928      - |      AAR98101.1
+##   AAR98102.1 AY386263.1 4012-4491      - |      AAR98102.1
+##   AAR98103.1 AY386263.1 4554-6104      - |      AAR98103.1
+##   AAR98104.1 AY386263.1 6265-7626      - |      AAR98104.1
+##   -------
+##   seqinfo: 1 sequence from an unspecified genome; no seqlengths</code></pre>
+<pre class="r"><code>#if you want to see the intergeninc regions
+intergenic &lt;- gaps (genes)
+
+head (intergenic)</code></pre>
+<pre><code>## GRanges object with 6 ranges and 0 metadata columns:
+##         seqnames      ranges strand
+##            &lt;Rle&gt;   &lt;IRanges&gt;  &lt;Rle&gt;
+##   [1] AY386263.1     1-11395      +
+##   [2] AY386263.1 11636-14676      +
+##   [3] AY386263.1 14995-20002      +
+##   [4] AY386263.1 21707-21726      +
+##   [5] AY386263.1 22546-22604      +
+##   [6] AY386263.1 23472-26527      +
+##   -------
+##   seqinfo: 1 sequence from an unspecified genome; no seqlengths</code></pre>
+<p>So, you can extract anything from this genome. Look at the columnames to see what kind of information you can extract.</p>
+<p>This taxonomic database shows the postions where each gene or features are located within the genome. It does not actually contain any DNA sequence. To extract DNA sequence we need BSgenome package. Unfortunately, this virus or other viruses are not included in BSgenome package but the package allows you to make your own pakcage. This process is kown as “forging”. So, lets try to forge BSgenome for our Orf virus, so that we can work with DNA sequence of this virus.</p>
+<p>This process involves a creating a src file that contains all the information about the genome. We will need fasta file of the genome, finally we will use command line tools to create a package. So, we will be creating a BSgenome package for Orf virus.</p>
+<p>Steps :</p>
+<p>First create a folder named <code>Orf</code>.</p>
+<p>Inside that folder create a folder called <code>src_seqdir</code>.</p>
+<p>Put your genome in <code>fasta</code> format inside that folder.</p>
+<p>Create a plain text file and keep following information.Change the parameters as you like or that makes sense according to the genome that you are working with.</p>
+<hr />
+<p>Package: OrfTxdb</p>
+<p>Title: Full genome of Orf Virus Strain IA82</p>
+<p>Description: Full genome of orf virus</p>
+<p>Version: 1.0.0</p>
+<p>Suggests: Orf.virus.NCBI</p>
+<p>organism: Orfv</p>
+<p>Author: Delhon et al.</p>
+<p>common_name: Orf virus</p>
+<p>provider: NCBI</p>
+<p>provider_version: 1.0.0</p>
+<p>release_date: Jan.2004</p>
+<p>release_name: Orf virus strain OV-IA82</p>
+<p>BSgenomeObjname: Orfv virus</p>
+<p>source_url: <a href="https://www.ncbi.nlm.nih.gov/nuccore/AY386263.1" class="uri">https://www.ncbi.nlm.nih.gov/nuccore/AY386263.1</a></p>
+<p>organism_biocview: AnnotationData, BSgenome</p>
+<p>seqnames: c(“orfv”)</p>
+<p>SrcDataFiles: orfv.fasta</p>
+<p>seqfiles_suffix: .fasta</p>
+<p>seqs_srcdir: C:_000</p>
+<hr />
+<p>Then save this plain text file as <code>seed_file.txt</code>. Remember the package name. This will be the name of your package.</p>
+<p>Convert this plain file into DCF format in R. First read the file and then save it as DCF format.</p>
+<pre class="r"><code>my_file &lt;- read.dcf(&quot;seed_file.txt&quot;, fields = NULL, all = FALSE, keep.white = NULL)
+write.dcf(my_file , file = &quot;seed.dcf&quot;, append = FALSE, useBytes = FALSE,
+          indent = 0.1 * getOption(&quot;width&quot;),
+          width = 0.9 * getOption(&quot;width&quot;),
+          keep.white = NULL)</code></pre>
+<p>We will get <code>seed.dcf</code> file as an output. Now we are ready to forge.</p>
+<pre class="r"><code>library (BSgenome)
+#remove diectory if already exixts, since I will be running this code repeatedly
+unlink(c(&quot;OrfTxdb&quot;), recursive = TRUE, force = TRUE)
+
+#now create BSgenome package
+forgeBSgenomeDataPkg(&quot;seed.dcf&quot;)</code></pre>
+<pre><code>## Creating package in ./OrfTxdb 
+## Loading &#39;orfv&#39; sequence from FASTA file &#39;C:\Users\lokra_000\OneDrive\Github\OrfTxdb/orfv.fasta&#39; ... DONE
+## Writing all sequences to &#39;./OrfTxdb/inst/extdata/single_sequences.2bit&#39; ... DONE</code></pre>
+<p>It will create a new directory in the current directory. The name will be <code>ORfTxdb</code> as we supplied this name on the seed file.</p>
+<p>Now we are ready to create package.</p>
+<hr />
+<p>Go to the Terminal of the R Studio and navigate to the current folder.
+Enter following command</p>
+<p><code>R CMD build OrfTxdb</code></p>
+<p>Enter the name of the folder that was created above when by forgeBSgenomeDataPkg function. This will create a tarball file of our package.In my case a new tar file called OrfTxdb_1.0.0.tar was created.</p>
+<p>Check if everything is okay with your package using following command in the terminal</p>
+<p><code>R CMD check OrfTxdb_1.0.0.tar</code></p>
+<p>If everything is correct, then install the package using follwing command:</p>
+<p><code>R CMD install OrfTxdb_1.0.0.tar</code></p>
+<hr />
+<p>Now you can go back to R studio console and call this package. For example I names my package as <code>OrfTxdb</code>’. Lets use some functions on this package :</p>
+<pre class="r"><code>library (OrfTxdb)
+orf_genome &lt;- OrfTxdb
+orf_genome</code></pre>
+<pre><code>## Orf virus genome:
+## # organism: Orfv (Orf virus)
+## # provider: NCBI
+## # provider version: 1.0.0
+## # release date: Jan.2004
+## # release name: Orf virus strain OV-IA82
+## # 1 sequences:
+## #   orfv                                                                 
+## # (use &#39;seqnames()&#39; to see all the sequence names, use the &#39;$&#39; or &#39;[[&#39;
+## # operator to access a given sequence)</code></pre>
+<pre class="r"><code>organism(orf_genome)</code></pre>
+<pre><code>## [1] &quot;Orfv&quot;</code></pre>
+<pre class="r"><code>provider(orf_genome)</code></pre>
+<pre><code>## [1] &quot;NCBI&quot;</code></pre>
+<pre class="r"><code>#lets get the whome genome sequence
+getSeq(orf_genome)</code></pre>
+<pre><code>##   137241-letter &quot;DNAString&quot; instance
+## seq: CGAGAACGCGGACCAGGAGTTCCTGCGGGAGGAG...TCCTCCCGCAGGAACTCCTGGTCCGCGTTCTCG</code></pre>
+<pre class="r"><code>#lets extract the part of the geome
+getSeq(orf_genome,start=24,end=58)</code></pre>
+<pre><code>##   35-letter &quot;DNAString&quot; instance
+## seq: TGCGGGAGGAGCTACGGCAGAGGCTGGAACTGCTG</code></pre>
+<p>So, there are other cool things that can be done using genome features and BSgenome. For example, we can get postions of all the promoter sequences from genome features and use those values to extract promoter sequences from the BSgenome. I will write a post how to do that, but there are already tutorials available. For now, if we want to get the files and folders used in this tutorial you can get them here in my <a href="https://github.com/lrjoshi/OrfTxdb">Github</a>.</p>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="btn btn-primary btn-outline" href="/tags/genome/">Genome</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/r/">R</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/bsgenome/">BSgenome</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/genomicfeatures/">GenomicFeatures</a>
+  
+</div>
+
+
+
+
+    
+    
+    <div class="article-widget">
+      <div class="hr-light"></div>
+      <h3>Related</h3>
+      <ul>
+        
+        <li><a href="/2019/01/09/download-csv-into-r-studio-from-github/">Download CSV into R Studio from Github</a></li>
+        
+        <li><a href="/2018/09/01/shiny-app-for-designing-primers-for-dna-cloning/">Shiny App for Designing Primers for DNA Cloning</a></li>
+        
+        <li><a href="/2018/08/20/virus-growth-curve-generator-app/">Virus Growth Curve Generator App</a></li>
+        
+        <li><a href="/2018/07/23/creating-96-well-plates-in-r/">Creating 96-Well Plates in R</a></li>
+        
+        <li><a href="/2018/05/20/rna-seq-data-analysis-in-r/">RNA-Seq Data Analysis in R</a></li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="article-widget">
+      <div class="post-nav">
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/2016/04/20/working-with-ncbi-sra-files/" rel="next">Working with NCBI SRA files</a>
+  </div>
+  
+  
+</div>
+
+    </div>
+    
+
+    
+
+
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2018 &middot; 
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+
+  </body>
+</html>
+

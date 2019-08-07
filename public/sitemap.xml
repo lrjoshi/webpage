@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>/2019/08/05/working-with-the-genome-of-non-model-organism-in-r-bioconductor/</loc>
+      <lastmod>2019-08-05T21:13:14-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/2019/01/09/download-csv-into-r-studio-from-github/</loc>
       <lastmod>2019-01-09T21:13:14-05:00</lastmod>
     </url>
@@ -296,6 +305,16 @@
     
     <url>
     
+      <loc>/tags/bsgenome/</loc>
+      <lastmod>2019-08-05T21:13:14-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/categories/</loc>
       <priority>0</priority>
     </url>
@@ -317,6 +336,26 @@
     
       <loc>/tags/demo/</loc>
       <lastmod>2016-04-27T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/genome/</loc>
+      <lastmod>2019-08-05T21:13:14-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/genomicfeatures/</loc>
+      <lastmod>2019-08-05T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -386,7 +425,7 @@
     <url>
     
       <loc>/post/</loc>
-      <lastmod>2019-01-09T21:13:14-05:00</lastmod>
+      <lastmod>2019-08-05T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -436,7 +475,7 @@
     <url>
     
       <loc>/tags/r/</loc>
-      <lastmod>2019-01-09T21:13:14-05:00</lastmod>
+      <lastmod>2019-08-05T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
     
