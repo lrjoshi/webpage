@@ -47,12 +47,12 @@ FastaToTabular("dna_fasta.fasta")
 
 ### Tabular to Fasta format
 
-To convert `csv` to `fasta` format, one restriction is that *you should have your sequence names in the first column and sequence itself in the second column.* Then use following function. This will store the output table as `dna_table.csv` file in the current working directoty. *Remember, pre-existing file with the same name will be overwritten.*
+To convert `csv` to `fasta` format, one restriction is that *you should have your sequence names in the first column and sequence itself in the second column.* Then use following function. This will store the output table as `dna_table.fasta` file in the current working directoty. *Remember, pre-existing file with the same name will be overwritten.*
 
 
 ```{r}
 
-TabularToFasta("dna_table.csv")
+TabularToFasta("gene.csv")
 
 ```
 If you get permission error while writing files, try to create a new directory and set that directory as working directory.
