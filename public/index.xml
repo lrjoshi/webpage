@@ -11,6 +11,48 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Fasta to Table to Fasta Conversion in R</title>
+      <link>/2019/08/11/fasta-to-table-to-fasta-conversion-in-r/</link>
+      <pubDate>Sun, 11 Aug 2019 00:00:00 -0400</pubDate>
+      
+      <guid>/2019/08/11/fasta-to-table-to-fasta-conversion-in-r/</guid>
+      <description>
+
+&lt;p&gt;Sometimes we need to convert genetic sequences present in tabular format into plain text file (fasta) format. Also, often we need to convert fasta format into tabular format. DNA seqences present in tabular format can be used as a vector in R and we can do various operations like extracting part of DNA for each sequence. So, I have written two functions that would perform these tasks.&lt;/p&gt;
+
+&lt;p&gt;These functions can be pulled into R Studio directly from the github.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library (devtools)
+library (tidyverse)
+source_url(&amp;quot;https://raw.githubusercontent.com/lrjoshi/FastaTabular/master/fasta_and_tabular.R&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;fasta-to-tabular-format&#34;&gt;Fasta to tabular format&lt;/h3&gt;
+
+&lt;p&gt;Suppose we have our DNA sequences in dna_fasta.fasta file.&lt;/p&gt;
+
+&lt;p&gt;Convert this fasta file to table using following function. The output will be stored as dna_table.csv in the current directory.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;FastaToTabular(&amp;quot;dna_fasta.fasta&amp;quot;)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;tabular-to-fasta-format&#34;&gt;Tabular to Fasta format&lt;/h3&gt;
+
+&lt;p&gt;To convert csv to fasta format, one restriction is that you should have your sequence names in the first column and sequence itself in the second column. Then use following function. This will store the output table as dna_table.csv file in the current working directoty. Remember, pre-existing file with the same name will be overwritten.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;
+TabularToFasta(&amp;quot;dna_table.csv&amp;quot;)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you get permission error while writing files, try to create a new directory and set that directory as working directory.&lt;/p&gt;
+
+&lt;p&gt;Sample files and codes are present in my &lt;a href=&#34;https://github.com/lrjoshi/FastaTabular&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt; repository.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Working with the genome of non-model organism in R Bioconductor</title>
       <link>/2019/08/05/working-with-the-genome-of-non-model-organism-in-r-bioconductor/</link>
       <pubDate>Mon, 05 Aug 2019 21:13:14 -0500</pubDate>
@@ -664,18 +706,6 @@ fc_SE
       <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Senecavirus A (SVA), an emerging picornavirus of swine, causes vesicular disease (VD) that is clinically indistinguishable from foot-and-mouth disease (FMD) in pigs. Many aspects of SVA interactions with the host and the host immune responses to infection, however, remain unknown. In the present study, humoral and cellular immune responses to SVA were evaluated following infection in pigs. We show that SVA infection elicited an early and robust virus-neutralizing (VN) antibody response, which coincided and was strongly correlated with VP2- and VP3-specific IgM responses. Notably, the neutralizing antibody (NA) responses paralleled the reduction of viremia and resolution of the disease. Analysis of the major porcine T-cell subsets revealed that during the acute/clinical phase of SVA infection (14 days postinfection [p.i.]), T-cell responses were characterized by an increased frequency of αβ T cells, especially CD4+ T cells, which were first detected by day 7 p.i. and increased in frequency until day 14 p.i. Additionally, the frequency of CD8+ and double-positive CD4+ CD8+ T cells (effector/memory T cells) expressing interferon gamma (IFN-γ) or proliferating in response to SVA antigen stimulation increased after day 10 p.i. Results presented here show that SVA elicits B- and T-cell activation early upon infection, with IgM antibody levels being correlated with early neutralizing activity against the virus and peak B- and T-cell responses paralleling clinical resolution of the disease. The work provides important insights into the immunological events that follow SVA infection in the natural host.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Immunogenicity of ORFV-based vectors expressing the rabies virus glycoprotein in livestock species</title>
-      <link>/publication/orfv-rabies/</link>
-      <pubDate>Wed, 01 Nov 2017 00:00:00 -0400</pubDate>
-      
-      <guid>/publication/orfv-rabies/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The parapoxvirus Orf virus (ORFV) encodes several immunomodulatory proteins (IMPs) that modulate host-innate and pro-inflammatory responses and has been proposed as a vaccine delivery vector for use in animal species. Here we describe the construction and characterization of two recombinant ORFV vectors expressing the rabies virus (RABV) glycoprotein (G). The RABV-G gene was inserted in the ORFV024 or ORFV121 gene loci, which encode for IMPs that are unique to parapoxviruses and inhibit activation of the NF-κB signaling pathway. The immunogenicity of the resultant recombinant viruses (ORFV∆024RABV-G or ORFV∆121RABV-G, respectively) was evaluated in pigs and cattle. Immunization of the target species with ORFV∆024RABV-G and ORFV∆121RABV-G elicited robust neutralizing antibody responses against RABV. Notably, neutralizing antibody titers induced in ORFV∆121RABV-G-immunized pigs and cattle were significantly higher than those detected in ORFV∆024RABV-G-immunized animals, indicating a higher immunogenicity of ORFVΔ121-based vectors in these animal species.&lt;/p&gt;
 </description>
     </item>
     

@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Mon, 05 Aug 2019 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 11 Aug 2019 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fasta to Table to Fasta Conversion in R</title>
+      <link>/2019/08/11/fasta-to-table-to-fasta-conversion-in-r/</link>
+      <pubDate>Sun, 11 Aug 2019 00:00:00 -0400</pubDate>
+      
+      <guid>/2019/08/11/fasta-to-table-to-fasta-conversion-in-r/</guid>
+      <description>Sometimes we need to convert genetic sequences present in tabular format into plain text file (fasta) format. Also, often we need to convert fasta format into tabular format. DNA seqences present in tabular format can be used as a vector in R and we can do various operations like extracting part of DNA for each sequence. So, I have written two functions that would perform these tasks.
+These functions can be pulled into R Studio directly from the github.</description>
+    </item>
     
     <item>
       <title>Working with the genome of non-model organism in R Bioconductor</title>
