@@ -373,10 +373,10 @@ source_url(&quot;https://raw.githubusercontent.com/lrjoshi/FastaTabular/master/f
 
 <h3 id="tabular-to-fasta-format">Tabular to Fasta format</h3>
 
-<p>To convert <code>csv</code> to <code>fasta</code> format, one restriction is that <em>you should have your sequence names in the first column and sequence itself in the second column.</em> Then use following function. This will store the output table as <code>dna_table.csv</code> file in the current working directoty. <em>Remember, pre-existing file with the same name will be overwritten.</em></p>
+<p>To convert <code>csv</code> to <code>fasta</code> format, one restriction is that <strong>you should have your sequence names in the first column and sequence itself in the second column.</strong> Then use following function. This will store the output table as <code>dna_table.fasta</code> file in the current working directoty. <strong>Remember, pre-existing file with the same name will be overwritten.</strong></p>
 
 <pre><code class="language-r">
-TabularToFasta(&quot;dna_table.csv&quot;)
+TabularToFasta(&quot;gene.csv&quot;)
 
 </code></pre>
 
