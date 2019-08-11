@@ -29,9 +29,9 @@ source_url(&amp;quot;https://raw.githubusercontent.com/lrjoshi/FastaTabular/mast
 
 &lt;h3 id=&#34;fasta-to-tabular-format&#34;&gt;Fasta to tabular format&lt;/h3&gt;
 
-&lt;p&gt;Suppose we have our DNA sequences in dna_fasta.fasta file.&lt;/p&gt;
+&lt;p&gt;Suppose we have our DNA sequences in &lt;code&gt;dna_fasta.fasta&lt;/code&gt; file.&lt;/p&gt;
 
-&lt;p&gt;Convert this fasta file to table using following function. The output will be stored as dna_table.csv in the current directory.&lt;/p&gt;
+&lt;p&gt;Convert this fasta file to table using following function. The output will be stored as &lt;code&gt;dna_table.csv&lt;/code&gt; in the current directory.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;FastaToTabular(&amp;quot;dna_fasta.fasta&amp;quot;)
 
@@ -39,7 +39,7 @@ source_url(&amp;quot;https://raw.githubusercontent.com/lrjoshi/FastaTabular/mast
 
 &lt;h3 id=&#34;tabular-to-fasta-format&#34;&gt;Tabular to Fasta format&lt;/h3&gt;
 
-&lt;p&gt;To convert csv to fasta format, one restriction is that you should have your sequence names in the first column and sequence itself in the second column. Then use following function. This will store the output table as dna_table.csv file in the current working directoty. Remember, pre-existing file with the same name will be overwritten.&lt;/p&gt;
+&lt;p&gt;To convert &lt;code&gt;csv&lt;/code&gt; to &lt;code&gt;fasta&lt;/code&gt; format, one restriction is that &lt;em&gt;you should have your sequence names in the first column and sequence itself in the second column.&lt;/em&gt; Then use following function. This will store the output table as &lt;code&gt;dna_table.csv&lt;/code&gt; file in the current working directoty. &lt;em&gt;Remember, pre-existing file with the same name will be overwritten.&lt;/em&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;
 TabularToFasta(&amp;quot;dna_table.csv&amp;quot;)

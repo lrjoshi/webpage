@@ -35,10 +35,10 @@ source_url("https://raw.githubusercontent.com/lrjoshi/FastaTabular/master/fasta_
 
 ### Fasta to tabular format 
 
-Suppose we have our DNA sequences in dna_fasta.fasta file. 
+Suppose we have our DNA sequences in `dna_fasta.fasta` file. 
 
 
-Convert this fasta file to table using following function. The output will be stored as dna_table.csv in the current directory. 
+Convert this fasta file to table using following function. The output will be stored as `dna_table.csv` in the current directory. 
 
 ``` {r}
 FastaToTabular("dna_fasta.fasta")
@@ -47,7 +47,7 @@ FastaToTabular("dna_fasta.fasta")
 
 ### Tabular to Fasta format
 
-To convert csv to fasta format, one restriction is that you should have your sequence names in the first column and sequence itself in the second column. Then use following function. This will store the output table as dna_table.csv file in the current working directoty. Remember, pre-existing file with the same name will be overwritten.
+To convert `csv` to `fasta` format, one restriction is that *you should have your sequence names in the first column and sequence itself in the second column.* Then use following function. This will store the output table as `dna_table.csv` file in the current working directoty. *Remember, pre-existing file with the same name will be overwritten.*
 
 
 ```{r}
