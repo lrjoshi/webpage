@@ -40,6 +40,3 @@ weight = 5
 I am Lok Raj Joshi, PhD student at [Dr. Diel's Lab](https://www.diellab.net), Department of Population Medicine and Diagnostic Science, Cornell University. I am working on virus pathogensis,viral diagnostic assay and vectored-vaccine developement.
 I have deep  interest in next-generation sequencing and genomic data analysis. I use R and Linux command line tools for genomic data analysis.  
 ***
-
-
-<script data-ad-client="ca-pub-3971745378087481" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
