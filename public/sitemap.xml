@@ -5,6 +5,42 @@
     
     <url>
     
+      <loc>/publication/sva_vaccine/</loc>
+      <lastmod>2019-11-26T00:00:00-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/caprine_tk/</loc>
+      <lastmod>2019-10-21T00:00:00-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/bastrovirus/</loc>
+      <lastmod>2019-10-21T00:00:00-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/sva_persistence/</loc>
+      <lastmod>2019-10-01T00:00:00-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/2019/08/11/fasta-to-table-to-fasta-conversion-in-r/</loc>
       <lastmod>2019-08-11T00:00:00-04:00</lastmod>
     </url>
@@ -16,6 +52,15 @@
     
       <loc>/2019/08/05/working-with-the-genome-of-non-model-organism-in-r-bioconductor/</loc>
       <lastmod>2019-08-05T21:13:14-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/sva_3c/</loc>
+      <lastmod>2019-03-13T00:00:00-04:00</lastmod>
     </url>
     
   
@@ -295,7 +340,7 @@
     <url>
     
       <loc>/publication_types/2/</loc>
-      <lastmod>2019-01-01T00:00:00-05:00</lastmod>
+      <lastmod>2019-11-26T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -484,7 +529,7 @@
     <url>
     
       <loc>/publication/</loc>
-      <lastmod>2019-01-01T00:00:00-05:00</lastmod>
+      <lastmod>2019-11-26T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     

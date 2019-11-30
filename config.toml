@@ -226,7 +226,7 @@ enableGitInfo = false
   [[params.social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "mailto:lok.joshi@sdstate.edu"
+    link = "mailto:lrj36@cornell.edu"
 
   [[params.social]]
     icon = "twitter"
@@ -262,13 +262,19 @@ enableGitInfo = false
 
 [[menu.main]]
   name = "Publications"
+  url = "#publications_selected"
+  weight = 4
+
+[[menu.main]]
+  name = "Publications"
   url = "#publications"
-  weight = 3
+  weight = 4
+
 
 [[menu.main]]
   name = "Posts"
   url = "#posts"
-  weight = 4
+  weight = 5
 
 [[menu.main]]
   name = "Projects"
@@ -278,12 +284,12 @@ enableGitInfo = false
 [[menu.main]]
   name = "Impact/Awards"
   url = "#Impact"
-  weight = 5
+  weight = 6
 
 [[menu.main]]
   name = "Contact"
   url = "#contact"
-  weight = 6
+  weight = 7
 
 # Taxonomies.
 [taxonomies]

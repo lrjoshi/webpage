@@ -7,10 +7,61 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 26 Nov 2019 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Novel Live Attenuated Vaccine Candidate Protects Against Heterologous Senecavirus A Challenge</title>
+      <link>/publication/sva_vaccine/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 -0500</pubDate>
+      
+      <guid>/publication/sva_vaccine/</guid>
+      <description>Abstract
+Senecavirus A (SVA) is an emerging picornavirus causing vesicular disease (VD) clinically indistinguishable from foot-and-mouth disease (FMD) in pigs. Currently there are no vaccines currently available for SVA. Here we developed a recombinant SVA strain (rSVAm SacII) using reverse genetics and assessed its immunogenicity and protective efficacy in pigs. In vivo characterization of the rSVAm SacII strain demonstrated that the virus is attenuated, as evidenced by absence of lesions, decreased viremia and virus shedding in inoculated animals.</description>
+    </item>
+    
+    <item>
+      <title>Deletion of the thymidine kinase gene attenuates Caprine alphaherpesvirus 1 in goats</title>
+      <link>/publication/caprine_tk/</link>
+      <pubDate>Mon, 21 Oct 2019 00:00:00 -0400</pubDate>
+      
+      <guid>/publication/caprine_tk/</guid>
+      <description>Highlights
+•Deletion of the tk gene from the CpHV-1 genome attenuates the virus in goats.
+•Traditional infection/transfection resulted in efficient CpHV-1 recombination.
+•Both parental and tk-deleted viruses established latency in neurons of the trigeminal ganglia.</description>
+    </item>
+    
+    <item>
+      <title>Identification and genetic characterization of a porcine hepe-astrovirus (bastrovirus) in the United States</title>
+      <link>/publication/bastrovirus/</link>
+      <pubDate>Mon, 21 Oct 2019 00:00:00 -0400</pubDate>
+      
+      <guid>/publication/bastrovirus/</guid>
+      <description>Abstract
+Here we describe the identification and genetic characterization of a porcine hepe-astrovirus, or bastrovirus, obtained from feces from pigs in the United States. The genome of the new bastrovirus is 5,955 nt long and contains two open reading frames (ORFs). ORF1 encodes a protein containing three domains, viral methyltransferase, RNA helicase and RNA-dependent RNA polymerase (RdRp), and is closely related to the RdRp of hepatitis E virus. The ORF2 protein shares similarities with the astrovirus capsid precursor protein.</description>
+    </item>
+    
+    <item>
+      <title>Persistent Infection and Transmission of Senecavirus A from Carrier Sows to Contact Piglets</title>
+      <link>/publication/sva_persistence/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 -0400</pubDate>
+      
+      <guid>/publication/sva_persistence/</guid>
+      <description>Abstract Senecavirus A (SVA) is a picornavirus that causes acute vesicular disease (VD), that is clinically indistinguishable from foot-and-mouth disease (FMD), in pigs. Notably, SVA RNA has been detected in lymphoid tissues of infected animals several weeks following resolution of the clinical disease, suggesting that the virus may persist in select host tissues. Here, we investigated the occurrence of persistent SVA infection and the contribution of stressors (transportation, immunosuppression, or parturition) to acute disease and recrudescence from persistent SVA infection.</description>
+    </item>
+    
+    <item>
+      <title>Senecavirus A 3C Protease Mediates Host Cell Apoptosis Late in Infection</title>
+      <link>/publication/sva_3c/</link>
+      <pubDate>Wed, 13 Mar 2019 00:00:00 -0400</pubDate>
+      
+      <guid>/publication/sva_3c/</guid>
+      <description>Abstract
+Senecavirus A (SVA), an oncolytic picornavirus used for cancer treatment in humans, has recently emerged as a vesicular disease (VD)-causing agent in swine worldwide. Notably, SVA-induced VD is indistinguishable from foot-and-mouth disease (FMD) and other high-consequence VDs of pigs. Here we investigated the role of apoptosis on infection and replication of SVA. Given the critical role of the nuclear factor-kappa B (NF-κB) signaling pathway on modulation of cell death, we first assessed activation of NF-κB during SVA infection.</description>
+    </item>
     
     <item>
       <title>Detection of Fowlpox virus carrying distinct genome segments of Reticuloendotheliosis virus</title>

@@ -18,7 +18,7 @@ publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
 publication = "*Journal of Virology*"
-publication_short = "JOurnal of Virology"
+publication_short = "Journal of Virology"
 
 # Abstract and optional shortened version.
 abstract = ""
